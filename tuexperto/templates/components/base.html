@@ -1,0 +1,149 @@
+{% load static %}
+{% load humanize %}
+{% load meta %}
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+	<head {% meta_namespaces %}> 
+
+		{% include "meta/meta.html" %}
+		<!-- Bootstrap Core CSS -->
+		<link rel="stylesheet" href="{% static "assets/plugins/bootstrap/css/bootstrap.min.css" %}">
+		
+		<!-- Bootstrap Select Option css -->
+		<link rel="stylesheet" href="{% static "assets/plugins/bootstrap/css/bootstrap-select.min.css" %}">
+		
+	    <!-- Icons -->
+	    <link href="{% static "assets/plugins/icons/css/icons.css" %}" rel="stylesheet">
+	    
+	    <!-- Animate -->
+	    <link href="{% static "assets/plugins/animate/animate.css" %}" rel="stylesheet">
+	    
+	    <!-- Bootsnav -->
+	    <link href="{% static "assets/plugins/bootstrap/css/bootsnav.css" %}" rel="stylesheet">
+		
+		<!-- Nice Select Option css -->
+		<link rel="stylesheet" href="{% static "assets/plugins/nice-select/css/nice-select.css" %}">
+		
+		<!-- Aos Css -->
+	    <link href="{% static "assets/plugins/aos-master/aos.css" %}" rel="stylesheet">
+
+		<!-- Slick Slider -->
+	    <link href="{% static "assets/plugins/slick-slider/slick.css" %}" rel="stylesheet">	
+	    
+	    <!-- Custom style -->
+	    <link href="{% static "assets/css/style.css" %}" rel="stylesheet">
+		<link href="{% static "assets/css/responsiveness.css" %}" rel="stylesheet">
+		
+		<!-- Custom Color -->
+	    <link href="{% static "assets/css/skin/default.css" %}" rel="stylesheet">
+		{% block style %}
+			
+		{% endblock style %}
+	</head>
+	
+	<body>
+		
+		{% include "components/navbar.html" %}
+		
+		{% block content %}
+			{% endblock content %}
+			<!-- ================= footer start ========================= -->
+			<footer class="footer dark-bg">
+				<div class="container">
+					
+					<!-- Row Start -->
+					<div class="row">
+
+						<div class="col-md-7 col-sm-7">
+							<div class="row">
+								<div class="col-md-4 col-sm-6">
+									<h4>Sitio</h4>
+									<ul>
+										{% for page in pages %}
+										<li><a href="{% url 'post' slug=page.slug %}">{{page.title|capfirst}}</a></li>
+										{% endfor %}
+										{% if user.is_authenticated != True %}
+										<li><a href="{% url 'signin' %}">Acceder</a></li>
+										<li><a href="{% url 'signup' %}">Registrarse</a></li>
+										{% endif %}
+									</ul>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<h4>Categorías</h4>
+									<ul>
+										{% if categories %}
+											{% for category in categories %}
+												<li><a href="{% url 'category' category.slug %}">{{category.category|title}}</a></li>
+											{% endfor %}
+										{% endif %}
+									</ul>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<h4>últimas Entradas</h4>
+									<ul>
+										{% if last_post %}
+										{% for post in last_post %}
+												<li><a href="{% url 'post' post.slug %}">{{post.title|capfirst}}</a></li>
+											{% endfor %}
+										{% endif %}
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-5 col-sm-5">
+							<h4>Suscríbete!</h4>
+							<!-- Newsletter -->
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Enter Email">
+								<span class="input-group-btn">
+									<button type="button" class="btn btn-default"><i class="fa fa-location-arrow font-20"></i></button>
+								</span>
+							</div>
+							
+							<!-- Social Box -->
+							<div class="f-social-box">
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook facebook-cl"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter twitter-cl"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram instagram-cl"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						
+					</div>
+					
+					<!-- Row Start -->
+					<div class="row">
+						<div class="col-md-12">
+							<div class="copyright text-center">
+								<p>&copy; Copyright 2018 <a href="{% url 'home' %}">Julio Martínez</a>. All rights reserved.</p>
+							</div>
+							{# V. 2.0.0 #}
+						</div>
+					</div>
+					
+				</div>
+			</footer>
+			
+			<!-- =================== START JAVASCRIPT ================== -->
+			<!-- Jquery js-->
+			<script src="{% static "assets/js/jquery.min.js" %}"></script>
+			
+			<!-- Bootstrap js-->
+			<script src="{% static "assets/plugins/bootstrap/js/bootstrap.min.js" %}"></script>
+			
+			<!-- Bootsnav js-->
+			<script src="{% static "assets/plugins/bootstrap/js/bootsnav.js" %}"></script>
+			
+			<!-- Slick Slider js-->
+			<script src="{% static "assets/plugins/slick-slider/slick.js" %}"></script>
+			
+			<!-- Custom Js -->
+			<script src="{% static "assets/js/custom.js" %}"></script>
+
+			{% block scripts %}
+				
+			{% endblock scripts %}
+		</body>
+	</html>

@@ -1,0 +1,267 @@
+/*-----------------------------------------
+* Theme Name: Listing Hub
+* Author: Themez Hub
+* Version: 1.0
+* Last Change: Dec 27 2017
+  Author URI    : http://www.themezhub.com/
+ --------------------------------*/
+@media only screen  and (min-width : 768px) {
+.emp-detail {
+    margin-top: 60px;
+}
+.main-banner .caption {
+    margin-top: 4em;
+}
+.heading h2 {
+    font-size: 45px;
+    margin-bottom:5px;
+}
+.newsletter-box .btn {
+    padding: 18px 35px;
+    position: absolute;
+    top: 5px;
+    right: 22px;
+}
+.freelancer.banner img {
+    position: relative;
+    top: 5rem;
+}
+.newsletter-box {
+    padding: 0;
+    box-shadow: 0px 0px 0px 9px rgba(255,255,255,0.8);
+    border-radius: 50px;
+}
+.main-banner {
+    height: 100vh;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+}
+	
+@media only screen  and (min-width : 993px) {
+	section {
+		padding:6em 0;
+	}
+	.work-process p {
+		font-size: 15px;
+		padding: 0 20px;
+	}
+
+	.navbar-default .navbar-brand img {
+		max-width: 170px;
+	}
+	.half-box {
+		padding:140px 40px;
+	}
+	.half-box h2{
+		font-size:50px;
+	}
+	.newsletter{
+		padding:100px 0;
+	}
+	
+	.freelancer.banner h2{
+	font-size:65px;
+	}
+	.freelancer.banner .input-group .form-control{
+		height:65px;
+	}
+	.freelancer.banner .input-group-btn:last-child>.btn, .freelancer.banner .input-group-btn:last-child>.btn-group {
+		height:65px;
+	}
+	nav.navbar.bootsnav.navbar-fixed.navbar-transparent .logo-display, nav.navbar.bootsnav.navbar-fixed.no-background .logo-display {
+		display: block;
+	}
+	nav.navbar.bootsnav.navbar-fixed.navbar-transparent .logo-scrolled, nav.navbar.bootsnav.navbar-fixed.no-background .logo-scrolled {
+		display: none;
+	}
+	nav.navbar.bootsnav.navbar-fixed .logo-display {
+		display: none;
+	}
+
+}
+
+@media only screen  and (min-width : 1024px) {
+	h1 {
+	  font-size:46px;
+	}
+	h2 {
+	  font-size:36px;
+	}
+	h3 {
+	  font-size:27px;
+	}
+	h4 {
+	  font-size:20px;
+	} 
+	
+	h5 {
+	  font-size:17;
+	}
+	
+	h6 {
+	  font-size:12;
+	}
+	
+	/*------------ Custom Font Style --------------*/
+	.font-50{
+	font-size:50px;
+	}
+
+	.font-60{
+		font-size:60px;
+	}
+
+	.font-80{
+		font-size:80px;
+	}
+
+	.font-100{
+		font-size:100px;
+	}
+
+	.font-150{
+		font-size:150px;
+	}
+
+	.font-200{
+		font-size:200px;
+	}
+
+	.font-250{
+		font-size:250px;
+	}
+
+	.font-300{
+		font-size:300px;
+	}
+
+	.font-400{
+		font-size:400px;
+	}
+
+	.font-450{
+		font-size:450px;
+	}
+
+	.font-500{
+		font-size:500px;
+	}
+
+	.font-bold{
+		font-weight:bold;
+	}
+	.main-banner h2 {
+		font-size: 50px;
+		font-weight: 600;
+		margin-bottom:10px;
+	}
+	.main-banner p{
+		font-size:17px;
+	}
+	nav.navbar.bootsnav ul.navbar-right li.dropdown.sign-up ul.dropdown-menu li a {
+		text-align: left;
+	}
+
+}
+
+@media only screen  and (min-width : 1200px) {
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 993px){
+	nav.navbar.bootsnav ul.nav>li>a.btn-signup.red-btn {
+    padding: 11px 16px;
+    margin-top: 4px;
+   }
+   .navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 5px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+}
+
+@media screen and (max-width: 1199px) {
+
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px){
+
+}
+@media screen and (max-width: 992px) {
+	.navbar-default .navbar-brand img {
+		max-width: 160px;
+	}
+	.main-banner .form-control{
+		margin-bottom:10px;
+	}
+	
+	.fb-log-btn {
+		margin-bottom: 10px;
+	}
+	
+	.main-banner {
+		padding-top: 120px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	/*-- General Style--*/
+	html body .mob-padd-0{
+		padding:0;
+	}
+	html body .mob-mrg-0{
+		margin:0;
+	}
+	html body .mob-extra-mrg{
+		margin-left:-15px;
+		margin-right:-15px;
+	}
+	.heading h2 {
+		font-size: 28px;
+	}
+	/*----- Mobile Padding Settings ------*/
+	.mob-padd-0{
+		padding-left:0;
+		padding-right:0;
+	}
+	.newsletter-box .btn{
+		width:100%;
+	}
+        .m-clear{
+clear:both;
+}
+	.mob-mrg-0{
+		margin-left:-15px;
+		margin-right:-15px;
+	}
+	.mob-extra-mrg{
+		margin-left:-15px;
+		margin-right:-15px;
+	}
+	
+	.banner {
+		padding: 100px 0 80px 0;
+	}
+	
+	.emp-pic, .emp-bt, .emp-des {
+		text-align: center;
+	}
+	
+	.emp-pic img{
+		display:table;
+		margin:0 auto;
+	}
+	.emp-detail {
+		margin-top: 50px;
+	}
+
+}
+
+@media screen and (max-width: 479px) {
+
+}

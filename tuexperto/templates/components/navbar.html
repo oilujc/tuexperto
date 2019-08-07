@@ -1,0 +1,73 @@
+{% load static %}
+{% url 'home' as home%}
+<!-- ======================= Start Navigation ===================== -->
+<nav class="navbar navbar-default navbar-mobile navbar-fixed bootsnav">
+    <div class="container">
+        <!-- Start Logo Header Navigation -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+            <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <img src="{% static "logo.jpg" %}" class="logo logo-display" alt="">
+                <img src="{% static "logo.jpg" %}" class="logo logo-scrolled" alt="">
+            </a>
+        </div>
+        <!-- End Logo Header Navigation -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-left" data-in="fadeInDown" data-out="fadeOutUp">
+                <li class="{% if request.path == home %}active{% endif %}"><a href="{{home}}">Inicio</a></li>
+                {% for page in pages %}
+                    {% if page.show_in_navbar %}
+                        <li class="{% if request.path == page.slug %}active{% endif %}"><a href="{% url 'post' page.slug %}">{{page.title|title}}</a></li>
+                    {% endif %}
+                {% endfor %}
+                {% if categories %}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Categorías</a>
+                        <ul class="dropdown-menu animated fadeOutUp">
+                            {% for category in categories %}
+                                <li class="dropdown"><a href="{% url 'category' category.slug %}" class="dropdown-toggle" data-toggle="dropdown">{{category.title|capfirst}}</a>
+                                {% if category.subcategory_set.all %}
+                                    <ul class="dropdown-menu">
+                                        {% for subcategory in category.subcategory_set.all %}
+                                            <li><a href="{% url 'subcategory' category=category.slug slug=subcategory.slug %}">{{ subcategory.subcategory }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% endif %}
+            {% if user.is_authenticated %}
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user"></i> {{user.username|title}}</a>
+                    <ul class="dropdown-menu animated fadeOutUp">
+                        <li><a href="{% url 'user_post' pt='post' %}">Entradas</a></li>
+                        {% if user.is_staff %}
+                            <li><a href="{% url 'user_post' pt='page' %}">Páginas</a></li>
+                        {% endif %}
+                        {% if user.is_superuser %}
+                            <li><a href="{% url 'admin:index' %}">Administrador</a></li>
+                        {% endif %}
+                        <li><a href="{% url 'profile' user.username %}">Perfil</a></li>
+                        <li><a href="{% url 'logout' %}">Cerrar sesión</a></li>
+                    </ul>
+                </li>
+            {% endif %}
+        </ul>
+        <form class="navbar-form navbar-right" action="{% url 'search' %}" role="search">
+             <div class="input-group input-group-sm mrg-top-10">
+              <input type="text" name="q" id="q" class="form-control" placeholder="Buscar ...">
+              <span class="input-group-btn">
+                <button class="btn btn-radius bg-primary" type="submit"><i class="ti ti-search"></i></button>
+              </span>
+            </div><!-- /input-group -->
+            </form>
+    </div>
+    <!-- /.navbar-collapse -->
+</div>
+</nav>
+<!-- ======================= End Navigation ===================== -->

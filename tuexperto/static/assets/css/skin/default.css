@@ -1,0 +1,194 @@
+/*-------------- Blue Skins -----------------*/
+.blue-skin p a, .blue-skin .theme-cl, .blue-skin .theme-btn, .blue-skin .btn.theme-btn-outlined, .blue-skin a.theme-btn-outlined, .blue-skin .btn.light-btn, .blue-skin a.light-btn,
+.blue-skin .category-box .category-desc i, .blue-skin .nav-tabs.nav-advance>li.active>a, .blue-skin .nav-tabs.nav-advance>li>a:hover, .blue-skin .nav-tabs.nav-advance>li>a:focus,
+.blue-skin .slick-next:before, .blue-skin .slick-prev:before, .blue-skin .pagination>.active>a, .blue-skin .pagination>.active>span, .blue-skin .pagination>.active>a:hover, .blue-skin .pagination>.active>span:hover, .blue-skin .pagination>.active>a:focus, .blue-skin .pagination>.active>span:focus, .blue-skin .pagination>li>a:hover, .blue-skin .pagination>li>a:focus,
+.blue-skin .testimonial-detail .client-rating i, .blue-skin .style-1#accordion .panel-title a:after, .blue-skin .style-1#accordion .panel-title a.collapsed:after,
+.blue-skin #accordion2 .panel-title a:after, .blue-skin #accordion2 .panel-title a.collapsed:after, .blue-skin .tab.style-1 .nav-tabs li a:hover, .blue-skin .tab.style-1 .nav-tabs li.active a,
+.blue-skin .footer h4, .blue-skin .detail-info > h3, .blue-skin span.pull-right.vacancy-no span.v-count{
+	color:#1f86ef;
+}
+
+.blue-skin .theme-btn, .blue-skin .theme-bg, .blue-skin .theme-btn:hover, .blue-skin .theme-btn:focus, .blue-skin .btn.theme-btn-outlined:hover, .blue-skin a.theme-btn-outlined:hover, .blue-skin .btn.theme-btn-outlined:focus, .blue-skin a.theme-btn-outlined:focus,
+.blue-skin .btn.light-btn:hover, .blue-skin .btn.light-btn:focus, .blue-skin a.light-btn:hover, .blue-skin a.light-btn:focus, .blue-skin nav.navbar.bootsnav ul.nav > li >a.btn-signup.red-btn,
+.blue-skin .cmp-overview .cmp-icon i.fa, .blue-skin .custom-checkbox input[type="checkbox"]:checked + label:before, .blue-skin .custom-radio [type="radio"]:checked + label:after, .blue-skin .custom-radio [type="radio"]:not(:checked) + label:after,
+.blue-skin .pagination li:first-child a, .blue-skin .active .package-header, .blue-skin button.btn.btn-package, .blue-skin #accordion2.panel-group.style-2 .panel-title a.collapsed, .blue-skin .tab.style-2 .nav-tabs li a:hover, .blue-skin .tab.style-2 .nav-tabs li.active a,
+.blue-skin .footer .f-social-box ul li a i:hover, .blue-skin .footer .f-social-box ul li a i:focus, .blue-skin ul.side-list-inline.social-side li a :hover, .blue-skin ul.side-list-inline.social-side li a :focus{
+	background-color:#1f86ef !important;
+}
+
+.blue-skin .theme-btn, .blue-skin .theme-btn:hover, .blue-skin .theme-btn:focus, .blue-skin .btn.theme-btn-outlined, .blue-skin a.theme-btn-outlined, .blue-skin .btn.theme-btn-outlined:hover, .blue-skin a.theme-btn-outlined:hover, .blue-skin .btn.theme-btn-outlined:focus, .blue-skin a.theme-btn-outlined:focus,
+.blue-skin .btn.light-btn:hover, .blue-skin .btn.light-btn:focus, .blue-skin a.light-btn:hover, .blue-skin a.light-btn:focus, .blue-skin .custom-checkbox input[type="checkbox"]:checked + label:before, .blue-skin .pagination li:first-child a,
+.blue-skin .footer .f-social-box ul li a i:hover, .blue-skin .footer .f-social-box ul li a i:focus, .blue-skin span.pull-right.vacancy-no span.v-count, .blue-skin .tab.style-2 .nav-tabs li a:hover, .blue-skin .tab.style-2 .nav-tabs li.active a, .blue-skin .tab.style-1 .nav-tabs li a:hover, .blue-skin .tab.style-1 .nav-tabs li.active a{
+	border-color:#1f86ef;
+}
+
+/*-------------- red Skins -----------------*/
+.red-skin p a, .red-skin .theme-cl, .red-skin .theme-btn, .red-skin .btn.theme-btn-outlined, .red-skin a.theme-btn-outlined, .red-skin .btn.light-btn, .red-skin a.light-btn,
+.red-skin .category-box .category-desc i, .red-skin .nav-tabs.nav-advance>li.active>a, .red-skin .nav-tabs.nav-advance>li>a:hover, .red-skin .nav-tabs.nav-advance>li>a:focus,
+.red-skin .slick-next:before, .red-skin .slick-prev:before, .red-skin .pagination>.active>a, .red-skin .pagination>.active>span, .red-skin .pagination>.active>a:hover, .red-skin .pagination>.active>span:hover, .red-skin .pagination>.active>a:focus, .red-skin .pagination>.active>span:focus, .red-skin .pagination>li>a:hover, .red-skin .pagination>li>a:focus,
+.red-skin .testimonial-detail .client-rating i, .red-skin .style-1#accordion .panel-title a:after, .red-skin .style-1#accordion .panel-title a.collapsed:after,
+.red-skin #accordion2 .panel-title a:after, .red-skin #accordion2 .panel-title a.collapsed:after, .red-skin .tab.style-1 .nav-tabs li a:hover, .red-skin .tab.style-1 .nav-tabs li.active a,
+.red-skin .footer h4, .red-skin .detail-info > h3, .red-skin span.pull-right.vacancy-no span.v-count{
+	color:#ef1753;
+}
+
+.red-skin .theme-btn, .red-skin .theme-bg, .red-skin .theme-btn:hover, .red-skin .theme-btn:focus, .red-skin .btn.theme-btn-outlined:hover, .red-skin a.theme-btn-outlined:hover, .red-skin .btn.theme-btn-outlined:focus, .red-skin a.theme-btn-outlined:focus,
+.red-skin .btn.light-btn:hover, .red-skin .btn.light-btn:focus, .red-skin a.light-btn:hover, .red-skin a.light-btn:focus, .red-skin nav.navbar.bootsnav ul.nav > li >a.btn-signup.red-btn,
+.red-skin .cmp-overview .cmp-icon i.fa, .red-skin .custom-checkbox input[type="checkbox"]:checked + label:before, .red-skin .custom-radio [type="radio"]:checked + label:after, .red-skin .custom-radio [type="radio"]:not(:checked) + label:after,
+.red-skin .pagination li:first-child a, .red-skin .active .package-header, .red-skin button.btn.btn-package, .red-skin #accordion2.panel-group.style-2 .panel-title a.collapsed, .red-skin .tab.style-2 .nav-tabs li a:hover, .red-skin .tab.style-2 .nav-tabs li.active a,
+.red-skin .footer .f-social-box ul li a i:hover, .red-skin .footer .f-social-box ul li a i:focus, .red-skin ul.side-list-inline.social-side li a :hover, .red-skin ul.side-list-inline.social-side li a :focus{
+	background-color:#ef1753 !important;
+}
+
+.red-skin .theme-btn,.red-skin .theme-btn:hover, .red-skin .theme-btn:focus, .red-skin .btn.theme-btn-outlined, .red-skin a.theme-btn-outlined, .red-skin .btn.theme-btn-outlined:hover, .red-skin a.theme-btn-outlined:hover, .red-skin .btn.theme-btn-outlined:focus, .red-skin a.theme-btn-outlined:focus,
+.red-skin .btn.light-btn:hover, .red-skin .btn.light-btn:focus, .red-skin a.light-btn:hover, .red-skin a.light-btn:focus, .red-skin .custom-checkbox input[type="checkbox"]:checked + label:before, .red-skin .pagination li:first-child a,
+.red-skin .footer .f-social-box ul li a i:hover, .red-skin .footer .f-social-box ul li a i:focus, .red-skin span.pull-right.vacancy-no span.v-count, .red-skin .tab.style-2 .nav-tabs li a:hover, .red-skin .tab.style-2 .nav-tabs li.active a, .red-skin .tab.style-1 .nav-tabs li a:hover, .red-skin .tab.style-1 .nav-tabs li.active a{
+	border-color:#ef1753;
+}
+.red-skin .employer-box:before {
+    opacity: 0.5;
+	background:#fe2864;
+    background: -webkit-gradient(left, #fe2864 0%,#fe2864 100%);
+    background: -webkit-linear-gradient(left, #fe2864 0%,#fe2864 100%);
+    background: -moz-linear-gradient(left, #fe2864 0%,#fe2864 100%);
+    background: -ms-linear-gradient(left, #fe2864 0%,#fe2864 100%);
+    background: -o-linear-gradient(left, #fe2864 0%,#fe2864 100%);
+    background: linear-gradient(left, #fe2864 0%,#fe2864 100%);
+}
+
+
+/*-------------- purple Skins -----------------*/
+.purple-skin p a, .purple-skin .theme-cl, .purple-skin .theme-btn, .purple-skin .btn.theme-btn-outlined, .purple-skin a.theme-btn-outlined, .purple-skin .btn.light-btn, .purple-skin a.light-btn,
+.purple-skin .category-box .category-desc i, .purple-skin .nav-tabs.nav-advance>li.active>a, .purple-skin .nav-tabs.nav-advance>li>a:hover, .purple-skin .nav-tabs.nav-advance>li>a:focus,
+.purple-skin .slick-next:before, .purple-skin .slick-prev:before, .purple-skin .pagination>.active>a, .purple-skin .pagination>.active>span, .purple-skin .pagination>.active>a:hover, .purple-skin .pagination>.active>span:hover, .purple-skin .pagination>.active>a:focus, .purple-skin .pagination>.active>span:focus, .purple-skin .pagination>li>a:hover, .purple-skin .pagination>li>a:focus,
+.purple-skin .testimonial-detail .client-rating i, .purple-skin .style-1#accordion .panel-title a:after, .purple-skin .style-1#accordion .panel-title a.collapsed:after,
+.purple-skin #accordion2 .panel-title a:after, .purple-skin #accordion2 .panel-title a.collapsed:after, .purple-skin .tab.style-1 .nav-tabs li a:hover, .purple-skin .tab.style-1 .nav-tabs li.active a,
+.purple-skin .footer h4, .purple-skin .detail-info > h3, .purple-skin span.pull-right.vacancy-no span.v-count{
+	color:#8857f3;
+}
+
+.purple-skin .theme-btn, .purple-skin .theme-bg, .purple-skin .theme-btn:hover, .purple-skin .theme-btn:focus, .purple-skin .btn.theme-btn-outlined:hover, .purple-skin a.theme-btn-outlined:hover, .purple-skin .btn.theme-btn-outlined:focus, .purple-skin a.theme-btn-outlined:focus,
+.purple-skin .btn.light-btn:hover, .purple-skin .btn.light-btn:focus, .purple-skin a.light-btn:hover, .purple-skin a.light-btn:focus, .purple-skin nav.navbar.bootsnav ul.nav > li >a.btn-signup.red-btn,
+.purple-skin .cmp-overview .cmp-icon i.fa, .purple-skin .custom-checkbox input[type="checkbox"]:checked + label:before, .purple-skin .custom-radio [type="radio"]:checked + label:after, .purple-skin .custom-radio [type="radio"]:not(:checked) + label:after,
+.purple-skin .pagination li:first-child a, .purple-skin .active .package-header, .purple-skin button.btn.btn-package, .purple-skin #accordion2.panel-group.style-2 .panel-title a.collapsed, .purple-skin .tab.style-2 .nav-tabs li a:hover, .purple-skin .tab.style-2 .nav-tabs li.active a,
+.purple-skin .footer .f-social-box ul li a i:hover, .purple-skin .footer .f-social-box ul li a i:focus, .purple-skin ul.side-list-inline.social-side li a :hover, .purple-skin ul.side-list-inline.social-side li a :focus{
+	background-color:#8857f3 !important;
+}
+
+.purple-skin .theme-btn,.purple-skin .theme-btn:hover, .purple-skin .theme-btn:focus, .purple-skin .btn.theme-btn-outlined, .purple-skin a.theme-btn-outlined, .purple-skin .btn.theme-btn-outlined:hover, .purple-skin a.theme-btn-outlined:hover, .purple-skin .btn.theme-btn-outlined:focus, .purple-skin a.theme-btn-outlined:focus,
+.purple-skin .btn.light-btn:hover, .purple-skin .btn.light-btn:focus, .purple-skin a.light-btn:hover, .purple-skin a.light-btn:focus, .purple-skin .custom-checkbox input[type="checkbox"]:checked + label:before, .purple-skin .pagination li:first-child a,
+.purple-skin .footer .f-social-box ul li a i:hover, .purple-skin .footer .f-social-box ul li a i:focus, .purple-skin span.pull-right.vacancy-no span.v-count, .purple-skin .tab.style-2 .nav-tabs li a:hover, .purple-skin .tab.style-2 .nav-tabs li.active a, .purple-skin .tab.style-1 .nav-tabs li a:hover, .purple-skin .tab.style-1 .nav-tabs li.active a{
+	border-color:#8857f3;
+}
+.purple-skin .employer-box:before {
+    opacity: 0.5;
+	background:#7f44ff;
+    background: -webkit-gradient(left, #7f44ff 0%,#7f44ff 100%);
+    background: -webkit-linear-gradient(left, #7f44ff 0%,#7f44ff 100%);
+    background: -moz-linear-gradient(left, #7f44ff 0%,#7f44ff 100%);
+    background: -ms-linear-gradient(left, #7f44ff 0%,#7f44ff 100%);
+    background: -o-linear-gradient(left, #7f44ff 0%,#7f44ff 100%);
+    background: linear-gradient(left, #7f44ff 0%,#7f44ff 100%);
+}
+
+/*-------------- green Skins -----------------*/
+.green-skin p a, .green-skin .theme-cl, .green-skin .theme-btn, .green-skin .btn.theme-btn-outlined, .green-skin a.theme-btn-outlined, .green-skin .btn.light-btn, .green-skin a.light-btn,
+.green-skin .category-box .category-desc i, .green-skin .nav-tabs.nav-advance>li.active>a, .green-skin .nav-tabs.nav-advance>li>a:hover, .green-skin .nav-tabs.nav-advance>li>a:focus,
+.green-skin .slick-next:before, .green-skin .slick-prev:before, .green-skin .pagination>.active>a, .green-skin .pagination>.active>span, .green-skin .pagination>.active>a:hover, .green-skin .pagination>.active>span:hover, .green-skin .pagination>.active>a:focus, .green-skin .pagination>.active>span:focus, .green-skin .pagination>li>a:hover, .green-skin .pagination>li>a:focus,
+.green-skin .testimonial-detail .client-rating i, .green-skin .style-1#accordion .panel-title a:after, .green-skin .style-1#accordion .panel-title a.collapsed:after,
+.green-skin #accordion2 .panel-title a:after, .green-skin #accordion2 .panel-title a.collapsed:after, .green-skin .tab.style-1 .nav-tabs li a:hover, .green-skin .tab.style-1 .nav-tabs li.active a,
+.green-skin .footer h4, .green-skin .detail-info > h3, .green-skin span.pull-right.vacancy-no span.v-count{
+	color:#03a82e;
+}
+
+.green-skin .theme-btn, .green-skin .theme-bg, .green-skin .theme-btn:hover, .green-skin .theme-btn:focus, .green-skin .btn.theme-btn-outlined:hover, .green-skin a.theme-btn-outlined:hover, .green-skin .btn.theme-btn-outlined:focus, .green-skin a.theme-btn-outlined:focus,
+.green-skin .btn.light-btn:hover, .green-skin .btn.light-btn:focus, .green-skin a.light-btn:hover, .green-skin a.light-btn:focus, .green-skin nav.navbar.bootsnav ul.nav > li >a.btn-signup.red-btn,
+.green-skin .cmp-overview .cmp-icon i.fa, .green-skin .custom-checkbox input[type="checkbox"]:checked + label:before, .green-skin .custom-radio [type="radio"]:checked + label:after, .green-skin .custom-radio [type="radio"]:not(:checked) + label:after,
+.green-skin .pagination li:first-child a, .green-skin .active .package-header, .green-skin button.btn.btn-package, .green-skin #accordion2.panel-group.style-2 .panel-title a.collapsed, .green-skin .tab.style-2 .nav-tabs li a:hover, .green-skin .tab.style-2 .nav-tabs li.active a,
+.green-skin .footer .f-social-box ul li a i:hover, .green-skin .footer .f-social-box ul li a i:focus, .green-skin ul.side-list-inline.social-side li a :hover, .green-skin ul.side-list-inline.social-side li a :focus{
+	background-color:#03a82e !important;
+}
+
+.green-skin .theme-btn,.green-skin .theme-btn:hover, .green-skin .theme-btn:focus, .green-skin .btn.theme-btn-outlined, .green-skin a.theme-btn-outlined, .green-skin .btn.theme-btn-outlined:hover, .green-skin a.theme-btn-outlined:hover, .green-skin .btn.theme-btn-outlined:focus, .green-skin a.theme-btn-outlined:focus,
+.green-skin .btn.light-btn:hover, .green-skin .btn.light-btn:focus, .green-skin a.light-btn:hover, .green-skin a.light-btn:focus, .green-skin .custom-checkbox input[type="checkbox"]:checked + label:before, .green-skin .pagination li:first-child a,
+.green-skin .footer .f-social-box ul li a i:hover, .green-skin .footer .f-social-box ul li a i:focus, .green-skin span.pull-right.vacancy-no span.v-count, .green-skin .tab.style-2 .nav-tabs li a:hover, .green-skin .tab.style-2 .nav-tabs li.active a, .green-skin .tab.style-1 .nav-tabs li a:hover, .green-skin .tab.style-1 .nav-tabs li.active a{
+	border-color:#03a82e;
+}
+.green-skin .employer-box:before {
+    opacity: 0.5;
+	background:#1cc100;
+    background: -webkit-gradient(left, #1cc100 0%,#1cc100 100%);
+    background: -webkit-linear-gradient(left, #1cc100 0%,#1cc100 100%);
+    background: -moz-linear-gradient(left, #1cc100 0%,#1cc100 100%);
+    background: -ms-linear-gradient(left, #1cc100 0%,#1cc100 100%);
+    background: -o-linear-gradient(left, #1cc100 0%,#1cc100 100%);
+    background: linear-gradient(left, #1cc100 0%,#1cc100 100%);
+}
+
+/*-------------- yellow Skins -----------------*/
+.yellow-skin p a, .yellow-skin .theme-cl, .yellow-skin .theme-btn, .yellow-skin .btn.theme-btn-outlined, .yellow-skin a.theme-btn-outlined, .yellow-skin .btn.light-btn, .yellow-skin a.light-btn,
+.yellow-skin .category-box .category-desc i, .yellow-skin .nav-tabs.nav-advance>li.active>a, .yellow-skin .nav-tabs.nav-advance>li>a:hover, .yellow-skin .nav-tabs.nav-advance>li>a:focus,
+.yellow-skin .slick-next:before, .yellow-skin .slick-prev:before, .yellow-skin .pagination>.active>a, .yellow-skin .pagination>.active>span, .yellow-skin .pagination>.active>a:hover, .yellow-skin .pagination>.active>span:hover, .yellow-skin .pagination>.active>a:focus, .yellow-skin .pagination>.active>span:focus, .yellow-skin .pagination>li>a:hover, .yellow-skin .pagination>li>a:focus,
+.yellow-skin .testimonial-detail .client-rating i, .yellow-skin .style-1#accordion .panel-title a:after, .yellow-skin .style-1#accordion .panel-title a.collapsed:after,
+.yellow-skin #accordion2 .panel-title a:after, .yellow-skin #accordion2 .panel-title a.collapsed:after, .yellow-skin .tab.style-1 .nav-tabs li a:hover, .yellow-skin .tab.style-1 .nav-tabs li.active a,
+.yellow-skin .footer h4, .yellow-skin .detail-info > h3, .yellow-skin span.pull-right.vacancy-no span.v-count{
+	color:#ff7d00;
+}
+
+.yellow-skin .theme-btn, .yellow-skin .theme-bg, .yellow-skin .theme-btn:hover, .yellow-skin .theme-btn:focus, .yellow-skin .btn.theme-btn-outlined:hover, .yellow-skin a.theme-btn-outlined:hover, .yellow-skin .btn.theme-btn-outlined:focus, .yellow-skin a.theme-btn-outlined:focus,
+.yellow-skin .btn.light-btn:hover, .yellow-skin .btn.light-btn:focus, .yellow-skin a.light-btn:hover, .yellow-skin a.light-btn:focus, .yellow-skin nav.navbar.bootsnav ul.nav > li >a.btn-signup.red-btn,
+.yellow-skin .cmp-overview .cmp-icon i.fa, .yellow-skin .custom-checkbox input[type="checkbox"]:checked + label:before, .yellow-skin .custom-radio [type="radio"]:checked + label:after, .yellow-skin .custom-radio [type="radio"]:not(:checked) + label:after,
+.yellow-skin .pagination li:first-child a, .yellow-skin .active .package-header, .yellow-skin button.btn.btn-package, .yellow-skin #accordion2.panel-group.style-2 .panel-title a.collapsed, .yellow-skin .tab.style-2 .nav-tabs li a:hover, .yellow-skin .tab.style-2 .nav-tabs li.active a,
+.yellow-skin .footer .f-social-box ul li a i:hover, .yellow-skin .footer .f-social-box ul li a i:focus, .yellow-skin ul.side-list-inline.social-side li a :hover, .yellow-skin ul.side-list-inline.social-side li a :focus{
+	background-color:#ff7d00 !important;
+}
+
+.yellow-skin .theme-btn,.yellow-skin .theme-btn:hover, .yellow-skin .theme-btn:focus, .yellow-skin .btn.theme-btn-outlined, .yellow-skin a.theme-btn-outlined, .yellow-skin .btn.theme-btn-outlined:hover, .yellow-skin a.theme-btn-outlined:hover, .yellow-skin .btn.theme-btn-outlined:focus, .yellow-skin a.theme-btn-outlined:focus,
+.yellow-skin .btn.light-btn:hover, .yellow-skin .btn.light-btn:focus, .yellow-skin a.light-btn:hover, .yellow-skin a.light-btn:focus, .yellow-skin .custom-checkbox input[type="checkbox"]:checked + label:before, .yellow-skin .pagination li:first-child a,
+.yellow-skin .footer .f-social-box ul li a i:hover, .yellow-skin .footer .f-social-box ul li a i:focus, .yellow-skin span.pull-right.vacancy-no span.v-count, .yellow-skin .tab.style-2 .nav-tabs li a:hover, .yellow-skin .tab.style-2 .nav-tabs li.active a, .yellow-skin .tab.style-1 .nav-tabs li a:hover, .yellow-skin .tab.style-1 .nav-tabs li.active a{
+	border-color:#ff7d00;
+}
+.yellow-skin .employer-box:before {
+    opacity: 0.5;
+	background:#ff7d00;
+    background: -webkit-gradient(left, #ff7d00 0%,#ff7d00 100%);
+    background: -webkit-linear-gradient(left, #ff7d00 0%,#ff7d00 100%);
+    background: -moz-linear-gradient(left, #ff7d00 0%,#ff7d00 100%);
+    background: -ms-linear-gradient(left, #ff7d00 0%,#ff7d00 100%);
+    background: -o-linear-gradient(left, #ff7d00 0%,#ff7d00 100%);
+    background: linear-gradient(left, #ff7d00 0%,#ff7d00 100%);
+}
+
+/*-------------- cyan Skins -----------------*/
+.cyan-skin p a, .cyan-skin .theme-cl, .cyan-skin .theme-btn, .cyan-skin .btn.theme-btn-outlined, .cyan-skin a.theme-btn-outlined, .cyan-skin .btn.light-btn, .cyan-skin a.light-btn,
+.cyan-skin .category-box .category-desc i, .cyan-skin .nav-tabs.nav-advance>li.active>a, .cyan-skin .nav-tabs.nav-advance>li>a:hover, .cyan-skin .nav-tabs.nav-advance>li>a:focus,
+.cyan-skin .slick-next:before, .cyan-skin .slick-prev:before, .cyan-skin .pagination>.active>a, .cyan-skin .pagination>.active>span, .cyan-skin .pagination>.active>a:hover, .cyan-skin .pagination>.active>span:hover, .cyan-skin .pagination>.active>a:focus, .cyan-skin .pagination>.active>span:focus, .cyan-skin .pagination>li>a:hover, .cyan-skin .pagination>li>a:focus,
+.cyan-skin .testimonial-detail .client-rating i, .cyan-skin .style-1#accordion .panel-title a:after, .cyan-skin .style-1#accordion .panel-title a.collapsed:after,
+.cyan-skin #accordion2 .panel-title a:after, .cyan-skin #accordion2 .panel-title a.collapsed:after, .cyan-skin .tab.style-1 .nav-tabs li a:hover, .cyan-skin .tab.style-1 .nav-tabs li.active a,
+.cyan-skin .footer h4, .cyan-skin .detail-info > h3, .cyan-skin span.pull-right.vacancy-no span.v-count{
+	color:#02b9b5;
+}
+
+.cyan-skin .theme-btn, .cyan-skin .theme-bg, .cyan-skin .theme-btn:hover, .cyan-skin .theme-btn:focus, .cyan-skin .btn.theme-btn-outlined:hover, .cyan-skin a.theme-btn-outlined:hover, .cyan-skin .btn.theme-btn-outlined:focus, .cyan-skin a.theme-btn-outlined:focus,
+.cyan-skin .btn.light-btn:hover, .cyan-skin .btn.light-btn:focus, .cyan-skin a.light-btn:hover, .cyan-skin a.light-btn:focus, .cyan-skin nav.navbar.bootsnav ul.nav > li >a.btn-signup.red-btn,
+.cyan-skin .cmp-overview .cmp-icon i.fa, .cyan-skin .custom-checkbox input[type="checkbox"]:checked + label:before, .cyan-skin .custom-radio [type="radio"]:checked + label:after, .cyan-skin .custom-radio [type="radio"]:not(:checked) + label:after,
+.cyan-skin .pagination li:first-child a, .cyan-skin .active .package-header, .cyan-skin button.btn.btn-package, .cyan-skin #accordion2.panel-group.style-2 .panel-title a.collapsed, .cyan-skin .tab.style-2 .nav-tabs li a:hover, .cyan-skin .tab.style-2 .nav-tabs li.active a,
+.cyan-skin .footer .f-social-box ul li a i:hover, .cyan-skin .footer .f-social-box ul li a i:focus, .cyan-skin ul.side-list-inline.social-side li a :hover, .cyan-skin ul.side-list-inline.social-side li a :focus{
+	background-color:#02b9b5 !important;
+}
+
+.cyan-skin .theme-btn,.cyan-skin .theme-btn:hover, .cyan-skin .theme-btn:focus, .cyan-skin .btn.theme-btn-outlined, .cyan-skin a.theme-btn-outlined, .cyan-skin .btn.theme-btn-outlined:hover, .cyan-skin a.theme-btn-outlined:hover, .cyan-skin .btn.theme-btn-outlined:focus, .cyan-skin a.theme-btn-outlined:focus,
+.cyan-skin .btn.light-btn:hover, .cyan-skin .btn.light-btn:focus, .cyan-skin a.light-btn:hover, .cyan-skin a.light-btn:focus, .cyan-skin .custom-checkbox input[type="checkbox"]:checked + label:before, .cyan-skin .pagination li:first-child a,
+.cyan-skin .footer .f-social-box ul li a i:hover, .cyan-skin .footer .f-social-box ul li a i:focus, .cyan-skin span.pull-right.vacancy-no span.v-count, .cyan-skin .tab.style-2 .nav-tabs li a:hover, .cyan-skin .tab.style-2 .nav-tabs li.active a, .cyan-skin .tab.style-1 .nav-tabs li a:hover, .cyan-skin .tab.style-1 .nav-tabs li.active a{
+	border-color:#02b9b5;
+}
+.cyan-skin .employer-box:before {
+    opacity: 0.5;
+	background:#02b9b5;
+    background: -webkit-gradient(left, #02b9b5 0%,#02b9b5 100%);
+    background: -webkit-linear-gradient(left, #02b9b5 0%,#02b9b5 100%);
+    background: -moz-linear-gradient(left, #02b9b5 0%,#02b9b5 100%);
+    background: -ms-linear-gradient(left, #02b9b5 0%,#02b9b5 100%);
+    background: -o-linear-gradient(left, #02b9b5 0%,#02b9b5 100%);
+    background: linear-gradient(left, #02b9b5 0%,#02b9b5 100%);
+}

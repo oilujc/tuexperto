@@ -1,0 +1,12 @@
+{% extends "components/base.html" %}
+{% block content %}
+	<section>
+		<div class="container">
+			<div class="error-page padd-top-30 padd-bot-30">
+				<h1 class="mrg-top-15 mrg-bot-0 cl-danger font-250 font-bold">404</h1>
+				<p>La página que buscas no existe. </p>
+				<a href="{% url 'home' %}" class="btn theme-btn-trans mrg-top-20">Ir a la página principal</a>
+			</div>
+		</div>
+	</section>
+{% endblock content %}

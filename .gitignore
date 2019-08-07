@@ -1,0 +1,15 @@
+# Created by https://www.gitignore.io/api/django
+# Edit at https://www.gitignore.io/?templates=django
+
+### Django ###
+*.log
+*.pot
+*.pyc
+db.sqlite3
+secret.py
+__pycache__/
+
+### Celery ###
+*.pid
+
+

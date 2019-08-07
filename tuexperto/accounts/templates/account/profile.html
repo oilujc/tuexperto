@@ -1,0 +1,231 @@
+{% extends "../components/base.html" %}
+{% load thumbnail %}
+{% block content %}
+{% include "../components/title_page.html" %}
+<!-- ====================== Resume Detail ================ -->
+		<section>
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					
+					<div class="col-md-8 col-sm-8">
+						
+						<div class="detail-wrapper">
+							<div class="detail-wrapper-body">
+							
+								<div class="text-center mrg-bot-30">
+									{% if object.image %}
+									{% thumbnail object.image "200x200" crop="center" as im %}
+										<img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}" class="img-circle" alt="{{object.username}}" />
+									{% endthumbnail %}
+									{% else %}
+										<img src="http://via.placeholder.com/400x400" class="img-circle width-100" alt="{{object.username}}"/>
+									{% endif %}
+									{% if object.get_full_name %}
+									
+									<h4 class="meg-0">{{object.get_full_name}}</h4>
+									{% else %}
+
+									<h4 class="meg-0">{{object.username|capfirst}}</h4>
+									{% endif %}
+
+									{% if object.title %}
+										
+									<span>{{object.title|capfirst}}</span>
+									{% endif %}
+								</div>
+								
+								<div class="row">
+									<div class="col-sm-4 mrg-bot-10">
+										<i class="ti-location-pin padd-r-10"></i>{{object.country.name|capfirst}}
+									</div>
+									<div class="col-sm-4 mrg-bot-10">
+										<i class="ti-email padd-r-10"></i>{{object.email}}
+									</div>
+									<div class="col-sm-4 mrg-bot-10">
+										{% for skill in object.skills.all %}
+										<span class="skill-tag">{{skill.skill|capfirst}}</span>
+										{% endfor %}
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						
+						<div class="detail-wrapper">
+							<div class="detail-wrapper-header">
+								<h4>Acerca de mí</h4>
+							</div>
+							<div class="detail-wrapper-body">
+								
+								{% autoescape off %}
+									{{object.description|linebreaks}}
+								{% endautoescape %}
+							</div>
+						</div>
+						
+						<div class="detail-wrapper">
+							<div class="detail-wrapper-header">
+								<h4>Educación</h4>
+							</div>
+							<div class="detail-wrapper-body">
+								{% for education in object.usereducation_set.all %}
+								<div class="edu-history info">
+									<i></i>
+									<div class="detail-info">
+										<h3>University</h3>
+										<i>2008 - 2012</i>
+										<span>Middle East Technical University <i>Computer Science</i></span>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+									</div>
+								</div>
+								{% empty %}
+									<p>No hay elementos agregados</p>
+								{% endfor %}
+							</div>
+						</div>
+						
+						<div class="detail-wrapper">
+							<div class="detail-wrapper-header">
+								<h4>Trabajo y Experiencia</h4>
+							</div>
+							<div class="detail-wrapper-body">
+								{% for work in object.userexperiencie_set.all %}
+								<div class="edu-history info">
+									<i></i>
+									<div class="detail-info">
+										<h3>Php Developer <span>Infox Studio</span></h3>
+										<i>2008 - 2012</i>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+									</div>
+								</div>
+								{% empty %}
+									<p>No hay elementos agregados</p>
+								{% endfor %}
+								
+							</div>
+						</div>
+						
+					</div>
+					
+					<!-- Sidebar -->
+					<div class="col-md-4 col-sm-4">
+						<div class="sidebar">
+							
+							<!-- Start: Opening hour -->
+							<div class="widget-boxed">
+								<div class="widget-boxed-body">
+									<a href="#" class="btn btn-m theme-btn full-width mrg-bot-10"><i class="ti-heart"></i>Descargar CV</a>
+									</div>
+							</div>
+							<!-- End: Opening hour -->	
+							<!-- Start: Opening hour -->
+							{% if object.contact_me %}
+							<div class="widget-boxed">
+								<div class="widget-boxed-header">
+									<h4><i class="ti-headphone padd-r-10"></i>Contacto</h4>
+								</div>
+								<div class="widget-boxed-body">
+									<form>
+										<input type="text" class="form-control" placeholder="Enter your Name *">
+										<input type="text" class="form-control" placeholder="Email Address*">
+										<input type="text" class="form-control" placeholder="Phone Number">
+										<textarea class="form-control height-140" placeholder="Message should have more than 50 characters"></textarea>
+										<button class="btn theme-btn full-width">Enviar Email</button>
+										<span>Aceptas nuestros <a href="#" title="">Terminos y Condiciones</a></span>
+									</form>
+								</div>
+							</div>
+							<!-- End: Opening hour -->
+							{% endif %}
+							 
+						</div>
+						
+					</div>
+					<!-- End Sidebar -->
+					
+				</div>
+				<!-- End Row -->
+			</div>
+		</section>
+		<!-- ===================== Blogs In Grid ===================== -->
+	<section class="padd-top-0">
+		<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<h4 class="mrg-bot-20">Entradas</h4>
+					</div>
+				</div>
+				<!-- End Row -->
+			<div class="row">
+				{% for obj in object_list %}
+					<div class="col-md-4 col-sm-6">
+						<div class="blog-box blog-grid-box">
+							<div class="blog-grid-box-img">
+								{% if obj.image %}
+									<a href="{% url 'post' obj.slug %}"><img src="{{obj.image.url}}" class="img-responsive" alt="" /></a>
+								{% else %}
+									<a href="{% url 'post' obj.slug %}"><img src="http://via.placeholder.com/1200x1200" class="img-responsive" alt="" /></a>
+								{% endif %}
+							</div>
+							<div class="blog-grid-box-content">
+								<div class="blog-avatar text-center">
+									{% if obj.user.image %}
+										{% thumbnail obj.user.image "100x100" crop="center" as im %}
+										<img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}" class="img-responsive" alt="" />
+										{% endthumbnail %}
+									{% else %}
+										<img src="http://via.placeholder.com/80x80" class="img-responsive" alt="" />
+									{% endif %}
+									{% if obj.user.get_full_name %}
+										<p><strong>By</strong> <span class="theme-cl">{{obj.user.get_full_name|title}}</span></p>
+									{% else %}
+										<p><strong>By</strong> <span class="theme-cl">{{obj.user.username|title}}</span></p>
+									{% endif %}
+									
+								</div>
+								<h4 style="margin-bottom:15px"><a href="{% url 'post' obj.slug %}">{{obj.title|capfirst}}</a></h4>
+								<p>{{obj.description|safe|truncatewords:10}}</p>
+								<a href="{% url 'post' obj.slug %}" class="theme-cl" title="Read More..">Continue...</a>
+								<div class="mrg-top-15">
+									<span class="mrg-l-5 job-tag bg-success-light">{{obj.category.category|capfirst}}</span>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="bs-example">
+						{% if object_list.has_other_pages %}
+							<ul class="pagination">
+								{% if object_list.has_previous %}
+									<li><a href="?page={{ object_list.previous_page_number }}">«</a></li>
+								{% else %}
+									<li class="disabled"><a href="" class="disabled">«</a></li>
+								{% endif %}
+								{% for i in object_list.paginator.page_range %}
+									{% if object_list.number == i %}
+										<li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+									{% else %}
+										<li><a href="?page={{ i }}">{{ i }}</a></li>
+									{% endif %}
+								{% endfor %}
+								{% if object_list.has_next %}
+									<li><a href="?page={{ object_list.next_page_number }}">»</a></li>
+								{% else %}
+									<li class="disabled"><a href="" class="disabled">»</a></li>
+								{% endif %}
+							</ul>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ===================== End Blogs In Grid ===================== -->
+		<!-- ====================== End Resume Detail ================ -->
+{% endblock content %}

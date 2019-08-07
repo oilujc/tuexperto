@@ -1,0 +1,249 @@
+{% extends "../components/base.html" %}
+{% load social_share %}
+{% load thumbnail %}
+{% load hitcount_tags %}
+{% block content %}
+	<!-- ================ Post Detail Basic Information ======================= -->
+	{% if object.image %}
+		<section class="detail-section" style="background:url({{object.image.url}});">
+		{% else %}
+			<section class="detail-section" style="background:url(http://via.placeholder.com/1920x800);">
+			{% endif %}
+			<div class="overlay"></div>
+			<div class="profile-cover-content">
+				<div class="container">
+					<div class="cover-buttons">
+						{% if object.post_type != 'pg' %}
+							<ul>
+								<li><div class="buttons medium button-plain "><i class="ti-eye"></i> {% get_hit_count for object %}</div></li>
+								<li><div class="buttons medium button-plain "><i class="ti-time"></i>{{object.created_at|date:"d-M-Y"}}</div></li>
+							</ul>
+						{% endif %}
+					</div>
+					{% if object.post_type != 'pg' %}
+						<div class="job-owner hidden-xs hidden-sm">
+							<div class="job-owner-avater">
+								{% if object.user.image %}
+									{% thumbnail object.user.image "80x80" crop="center" as im %}
+										<img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}" class="img-responsive img-circle" alt="{{object.user.username}}" />
+									{% endthumbnail %}
+								{% else %}
+									<img src="http://via.placeholder.com/80x80" class="img-responsive img-circle" alt="" />
+								{% endif %}
+							</div>
+							<div class="job-owner-detail">
+								{% if object.user.get_full_name %}
+									
+									<h4><a href="{% url 'profile' username=object.user.username %}">{{object.user.get_full_name|title}}</a></h4>
+								{% else %}
+									<h4><a href="{% url 'profile' username=object.user.username %}">{{object.user.username|capfirst}}</a></h4>
+								{% endif %}
+								<span class="theme-cl">Miembro desde {{object.user.date_joined|date:"d-M-Y"}}</span>
+							</div>
+						</div>
+					{% endif %}
+				</div>
+			</div>
+		</section>
+		<!-- ================ End post Detail Basic Information ======================= -->
+		
+		<!-- ================ Start post Overview ======================= -->
+		<section>
+			<div class="container">
+				
+				<!-- row -->
+				<div class="row">
+					
+					<article class="col-md-12 col-sm-12">
+						
+						<div class="detail-wrapper mrg-bot-5">
+							<div class="detail-wrapper-body">
+								<div class="job-title-bar text-center">
+									<h3>{{object.title|capfirst}} </h3>
+								</div>
+							</div>
+
+							<div class="detail-wrapper-body">
+								{{object.content|safe}}
+							</div>
+							{% if object.post_type != 'pg' %}
+								<div class="">
+									<div class="padd-10 blog-footer-social mrg-top-0">
+										<span>Categorías <i class="ti-briefcase"></i></span>
+										<ul class="list-inline social">
+											<li>
+												<a href="{% url 'category' slug=object.category.slug %}"><span class="job-tag bg-purple-light">{{object.category.title|capfirst}}</span></a>
+											</li>
+											<li>
+												<a href="{% url 'subcategory' category=object.category.slug slug=object.subcategory.slug %}">
+												<span class="job-tag bg-danger-light">{{object.subcategory.title|capfirst}}</span>
+												</a>
+											</li>
+										</ul>
+										
+									</div>
+								</div>
+								<div class="">
+									<div class="padd-10 blog-footer-social mrg-top-0">
+										<span>Tags <i class="fa fa-tags"></i></span>
+										<ul class="list-inline social">
+											{% for tag in object.tags.all %}
+											<li>
+												<a href="{% url 'search' %}?q={{tag.tag}}">
+													<span class="job-tag {% cycle 'bg-purple-light' 'bg-danger-light' 'bg-primary-light' 'bg-warning-light' 'bg-success-light'  %}">{{tag}}</span>
+												</a>
+											</li>
+											{% endfor %}
+												
+										</ul>
+										
+									</div>
+								</div>
+								<div class="no-mrg">
+									<div class="padd-10 blog-footer-social mrg-top-0">
+										<span>Compartir <i class="fa fa-share-alt"></i></span>
+										<ul class="list-inline social">
+											<li>{% post_to_twitter "Check this {{object.title}}!" object.slug '<i class="fa fa-twitter"></i>' %}</li>
+										</ul>
+									</div>
+								</div>
+							{% endif %}
+						</div>
+					</article>
+					
+				</div>
+				<!-- End Row -->
+				{% if object.post_type != 'pg'  and related %}
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-12">
+							<h4 class="mrg-bot-20">Entradas relacionadas</h4>
+						</div>
+					</div>
+					<!-- End Row -->
+					
+					<!-- row -->
+					<div class="row">
+						<!-- Single Job -->
+						<div class="col-md-3 col-sm-6">
+							<div class="grid-job-widget">
+								
+								<span class="job-type full-type">Full Time</span>
+								<div class="job-like">
+									<label class="toggler toggler-danger">
+										<input type="checkbox" checked>
+										<i class="fa fa-heart"></i>
+									</label>
+								</div>
+								
+								<div class="u-content">
+									<div class="avatar box-80">
+										<a href="employer-detail/html">
+											<img class="img-responsive" src="http://via.placeholder.com/80x80" alt="">
+										</a>
+									</div>
+									<h5><a href="employer-detail/html">Product Redesign</a></h5>
+									<p class="text-muted">2708 Scenic Way, Sutter, IL 62373</p>
+								</div>
+								
+								<div class="job-type-grid">
+									<a href="job-detail.html" class="btn job-browse-btn btn-radius br-light">Browse Now</a>
+								</div>
+								
+							</div>
+						</div>
+						
+						<!-- Single Job -->
+						<div class="col-md-3 col-sm-6">
+							<div class="grid-job-widget">
+								
+								<span class="job-type full-type">Full Time</span>
+								<div class="job-like">
+									<label class="toggler toggler-danger">
+										<input type="checkbox">
+										<i class="fa fa-heart"></i>
+									</label>
+								</div>
+								
+								<div class="u-content">
+									<div class="avatar box-80">
+										<a href="employer-detail/html">
+											<img class="img-responsive" src="http://via.placeholder.com/80x80" alt="">
+										</a>
+									</div>
+									<h5><a href="employer-detail/html">New Product Mockup</a></h5>
+									<p class="text-muted">2708 Scenic Way, Sutter, IL 62373</p>
+								</div>
+								
+								<div class="job-type-grid">
+									<a href="job-detail.html" class="btn job-browse-btn btn-radius br-light">Browse Now</a>
+								</div>
+								
+							</div>
+						</div>
+						
+						<!-- Single Job -->
+						<div class="col-md-3 col-sm-6">
+							<div class="grid-job-widget">
+								
+								<span class="job-type part-type">Full Time</span>
+								<div class="job-like">
+									<label class="toggler toggler-danger">
+										<input type="checkbox" checked>
+										<i class="fa fa-heart"></i>
+									</label>
+								</div>
+								
+								<div class="u-content">
+									<div class="avatar box-80">
+										<a href="employer-detail/html">
+											<img class="img-responsive" src="http://via.placeholder.com/80x80" alt="">
+										</a>
+									</div>
+									<h5><a href="employer-detail/html">Custom Php Developer</a></h5>
+									<p class="text-muted">3765 C Street, Worcester</p>
+								</div>
+								
+								<div class="job-type-grid">
+									<a href="job-detail.html" class="btn job-browse-btn btn-radius br-light">Browse Now</a>
+								</div>
+								
+							</div>
+						</div>
+						
+						<!-- Single Job -->
+						<div class="col-md-3 col-sm-6">
+							<div class="grid-job-widget">
+								
+								<span class="job-type part-type">Part Time</span>
+								<div class="job-like">
+									<label class="toggler toggler-danger">
+										<input type="checkbox">
+										<i class="fa fa-heart"></i>
+									</label>
+								</div>
+								
+								<div class="u-content">
+									<div class="avatar box-80">
+										<a href="employer-detail/html">
+											<img class="img-responsive" src="http://via.placeholder.com/80x80" alt="">
+										</a>
+									</div>
+									<h5><a href="employer-detail/html">Wordpress Developer</a></h5>
+									<p class="text-muted">2719 Duff Avenue, Winooski</p>
+								</div>
+								
+								<div class="job-type-grid">
+									<a href="job-detail.html" class="btn job-browse-btn btn-radius br-light">Browse Now</a>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<!-- End Row -->
+				{% endif %}
+			</div>
+		</section>
+		
+		<!-- ====================== End Post Overview ================ -->
+	{% endblock content %}

@@ -1,0 +1,29 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django = "*"
+mysqlclient = "*"
+pillow = "*"
+djangorestframework = "*"
+django-ckeditor = "*"
+django-meta = "*"
+django-select2 = "*"
+django-social-share = "*"
+django-hitcount = "*"
+psycopg2 = "*"
+django-anymail = {extras = ["mailgun"],version = "*"}
+django-countries = "*"
+pyuca = "*"
+sorl-thumbnail = "*"
+django-celery-results = "*"
+celery = "*"
+django-celery-beat = "*"
+redis = "*"
+
+[requires]
+python_version = "3.6"

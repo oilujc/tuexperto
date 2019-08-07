@@ -1,0 +1,163 @@
+/*-------------- General Color ----------------*/
+p a {
+    color: #1f86ef;
+}
+.theme-cl {
+    color: #1f86ef;
+}
+.theme-btn {
+    background: #1f86ef;
+    border: 1px solid #1f86ef;
+	color:#ffffff;
+}
+.theme-btn:hover, .theme-btn:focus{
+	color:#ffffff;
+	background: #1f86ef;
+    border: 1px solid #1f86ef;
+}
+.btn.theme-btn-outlined, a.theme-btn-outlined{
+	border:1px solid #1f86ef;
+	color:#1f86ef;	
+}
+.btn.theme-btn-outlined:hover, a.theme-btn-outlined:hover, .btn.theme-btn-outlined:focus, a.theme-btn-outlined:focus{
+	background:#1f86ef;
+	border-color:#1f86ef;
+}
+.btn.light-btn, a.light-btn{
+	background:#ffffff;
+	border:1px solid #ffffff;
+	color:#1f86ef;
+}
+.btn.light-btn:hover, .btn.light-btn:focus, a.light-btn:hover, a.light-btn:focus{
+	background:#1f86ef;
+	border:1px solid #1f86ef;
+	color:#ffffff;
+}
+nav.navbar.bootsnav ul.nav > li >a.btn-signup.red-btn {
+    background:#1f86ef !important;
+}
+.cmp-overview .cmp-icon i.fa {
+    background: #1f86ef;
+}
+.category-box .category-desc i {
+    color: #1f86ef;
+}
+.nav-tabs.nav-advance>li.active>a, .nav-tabs.nav-advance>li>a:hover, .nav-tabs.nav-advance>li>a:focus {
+    color: #1f86ef !important;
+}
+.slick-next:before, .slick-prev:before {
+    color: #1f86ef;
+}
+
+/*---------- Banner ----------*/
+.main-banner:before {
+    content: "";
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: #273140;
+    background: -webkit-gradient(bottom, #2d3345 0%,#2d3345 100%);
+    background: -webkit-linear-gradient(bottom, #2d3345 0%,#2d3345 100%);
+    background: -moz-linear-gradient(bottom, #2d3345 0%,#2d3345 100%);
+    background: -ms-linear-gradient(bottom, #2d3345 0%,#2d3345 100%);
+    background: -o-linear-gradient(bottom, #2d3345 0%,#2d3345 100%);
+    background: linear-gradient(bottom, #2d3345 0%,#2d3345 100%);
+    opacity: 0.8;
+}
+.employer-box:before {
+    opacity: 0.5;
+	background:#1f86ef;
+    background: -webkit-gradient(left, #1f86ef 0%,#1f86ef 100%);
+    background: -webkit-linear-gradient(left, #1f86ef 0%,#1f86ef 100%);
+    background: -moz-linear-gradient(left, #1f86ef 0%,#1f86ef 100%);
+    background: -ms-linear-gradient(left, #1f86ef 0%,#1f86ef 100%);
+    background: -o-linear-gradient(left, #1f86ef 0%,#1f86ef 100%);
+    background: linear-gradient(left, #1f86ef 0%,#1f86ef 100%);
+}
+
+/*----------- Checkbox & Radio Button -------------*/
+.custom-checkbox input[type="checkbox"]:checked + label:before {
+	border-color:#1f86ef;
+	background:#1f86ef;
+}
+.custom-radio [type="radio"]:checked + label:after,
+.custom-radio [type="radio"]:not(:checked) + label:after {
+    background:#1f86ef;
+}
+
+/*---------- Pagination --------------*/
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus, .pagination>li>a:hover, .pagination>li>a:focus {
+	color:#1f86ef;
+	border-color:#1f86ef;
+}
+.pagination li:first-child a {
+	background: #1f86ef;
+	border: 1px solid #1f86ef;
+}
+
+/*------ Package --------*/
+.active .package-header {
+    background: #1f86ef;
+}
+button.btn.btn-package {
+    background: #1f86ef;
+}
+
+/*--------- Testimonial ----------*/
+.testimonial-detail .client-rating i {
+    color: #1f86ef;
+}
+
+/*------ Accordion Color -------------*/
+.style-1#accordion .panel-title a:after,
+.style-1#accordion .panel-title a.collapsed:after{
+    color:#1f86ef;
+}
+
+#accordion2 .panel-title a:after,
+#accordion2 .panel-title a.collapsed:after{
+    color:#1f86ef;
+}
+
+#accordion2.panel-group.style-2 .panel-title a.collapsed {
+    background: #1f86ef;
+}
+
+/*------ Tab Color -------------*/
+.tab.style-1 .nav-tabs li a:hover,
+.tab.style-1 .nav-tabs li.active a{
+    color: #1f86ef;
+    border-bottom: 2px solid #1f86ef;
+}
+
+.tab.style-2 .nav-tabs li a:hover, .tab.style-2 .nav-tabs li.active a {
+    border-bottom: 2px solid #1f86ef;
+    background: #1f86ef;
+}
+
+/*---- Footer -------*/
+.footer h4 {
+    color: #1f86ef;
+}
+.footer .f-social-box ul li a i:hover, .footer .f-social-box ul li a i:focus {
+    background: #1f86ef;
+    border-color: #1f86ef;
+}
+
+
+/*--------- Inner Pages ----------------*/
+ul.side-list-inline.social-side li a :hover, ul.side-list-inline.social-side li a :focus {
+    background:#1f86ef;
+}
+.detail-info > h3 {
+    color: #1f86ef;
+}
+span.pull-right.vacancy-no span.v-count {
+    background: rgba(31, 134, 239,0.1);
+    color: #1f86ef;
+    border: 1px solid #1f86ef;
+}
+

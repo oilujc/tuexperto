@@ -1,0 +1,164 @@
+/*-------------- General Color ----------------*/
+p a {
+    color: #fe2864;
+}
+.theme-cl {
+    color: #fe2864;
+}
+.theme-btn {
+    background: #fe2864;
+    border: 1px solid #fe2864;
+	color:#ffffff;
+}
+.theme-btn:hover, .theme-btn:focus{
+	color:#ffffff;
+	background: #fe2864;
+    border: 1px solid #fe2864;
+}
+.btn.theme-btn-outlined, a.theme-btn-outlined{
+	border:1px solid #fe2864;
+	color:#fe2864;	
+}
+.btn.theme-btn-outlined:hover, a.theme-btn-outlined:hover, .btn.theme-btn-outlined:focus, a.theme-btn-outlined:focus{
+	background:#fe2864;
+	border-color:#fe2864;
+}
+.btn.light-btn, a.light-btn{
+	background:#ffffff;
+	border:1px solid #ffffff;
+	color:#fe2864;
+}
+.btn.light-btn:hover, .btn.light-btn:focus, a.light-btn:hover, a.light-btn:focus{
+	background:#fe2864;
+	border:1px solid #fe2864;
+	color:#ffffff;
+}
+nav.navbar.bootsnav ul.nav > li >a.btn-signup.red-btn {
+    background:#fe2864 !important;
+}
+.cmp-overview .cmp-icon i.fa {
+    background: #fe2864;
+}
+.category-box .category-desc i {
+    color: #fe2864;
+}
+.nav-tabs.nav-advance>li.active>a, .nav-tabs.nav-advance>li>a:hover, .nav-tabs.nav-advance>li>a:focus {
+    color: #fe2864 !important;
+}
+.slick-next:before, .slick-prev:before {
+    color: #fe2864;
+}
+
+/*---------- Banner ----------*/
+.main-banner:before {
+    content: "";
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: #273140;
+    background: -webkit-gradient(bottom, #2d3345 0%,#2d3345 100%);
+    background: -webkit-linear-gradient(bottom, #2d3345 0%,#2d3345 100%);
+    background: -moz-linear-gradient(bottom, #2d3345 0%,#2d3345 100%);
+    background: -ms-linear-gradient(bottom, #2d3345 0%,#2d3345 100%);
+    background: -o-linear-gradient(bottom, #2d3345 0%,#2d3345 100%);
+    background: linear-gradient(bottom, #2d3345 0%,#2d3345 100%);
+    opacity: 0.8;
+}
+.employer-box:before {
+    opacity: 0.5;
+	background:#fe2864;
+    background: -webkit-gradient(left, #fe2864 0%,#fe2864 100%);
+    background: -webkit-linear-gradient(left, #fe2864 0%,#fe2864 100%);
+    background: -moz-linear-gradient(left, #fe2864 0%,#fe2864 100%);
+    background: -ms-linear-gradient(left, #fe2864 0%,#fe2864 100%);
+    background: -o-linear-gradient(left, #fe2864 0%,#fe2864 100%);
+    background: linear-gradient(left, #fe2864 0%,#fe2864 100%);
+}
+
+
+/*----------- Checkbox & Radio Button -------------*/
+.custom-checkbox input[type="checkbox"]:checked + label:before {
+	border-color:#fe2864;
+	background:#fe2864;
+}
+.custom-radio [type="radio"]:checked + label:after,
+.custom-radio [type="radio"]:not(:checked) + label:after {
+    background:#fe2864;
+}
+
+/*---------- Pagination --------------*/
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus, .pagination>li>a:hover, .pagination>li>a:focus {
+	color:#fe2864;
+	border-color:#fe2864;
+}
+.pagination li:first-child a {
+	background: #fe2864;
+	border: 1px solid #fe2864;
+}
+
+/*------ Package --------*/
+.active .package-header {
+    background: #fe2864;
+}
+button.btn.btn-package {
+    background: #fe2864;
+}
+
+/*--------- Testimonial ----------*/
+.testimonial-detail .client-rating i {
+    color: #fe2864;
+}
+
+/*------ Accordion Color -------------*/
+.style-1#accordion .panel-title a:after,
+.style-1#accordion .panel-title a.collapsed:after{
+    color:#fe2864;
+}
+
+#accordion2 .panel-title a:after,
+#accordion2 .panel-title a.collapsed:after{
+    color:#fe2864;
+}
+
+#accordion2.panel-group.style-2 .panel-title a.collapsed {
+    background: #fe2864;
+}
+
+/*------ Tab Color -------------*/
+.tab.style-1 .nav-tabs li a:hover,
+.tab.style-1 .nav-tabs li.active a{
+    color: #fe2864;
+    border-bottom: 2px solid #fe2864;
+}
+
+.tab.style-2 .nav-tabs li a:hover, .tab.style-2 .nav-tabs li.active a {
+    border-bottom: 2px solid #fe2864;
+    background: #fe2864;
+}
+
+/*---- Footer -------*/
+.footer h4 {
+    color: #fe2864;
+}
+.footer .f-social-box ul li a i:hover, .footer .f-social-box ul li a i:focus {
+    background: #fe2864;
+    border-color: #fe2864;
+}
+
+
+/*--------- Inner Pages ----------------*/
+ul.side-list-inline.social-side li a :hover, ul.side-list-inline.social-side li a :focus {
+    background:#fe2864;
+}
+.detail-info > h3 {
+    color: #fe2864;
+}
+span.pull-right.vacancy-no span.v-count {
+    background: rgba(254, 40, 100,0.1);
+    color: #fe2864;
+    border: 1px solid #fe2864;
+}
+

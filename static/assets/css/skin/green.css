@@ -1,0 +1,164 @@
+/*-------------- General Color ----------------*/
+p a {
+    color: #1cc100;
+}
+.theme-cl {
+    color: #1cc100;
+}
+.theme-btn {
+    background: #1cc100;
+    border: 1px solid #1cc100;
+	color:#ffffff;
+}
+.theme-btn:hover, .theme-btn:focus{
+	color:#ffffff;
+	background: #1cc100;
+    border: 1px solid #1cc100;
+}
+.btn.theme-btn-outlined, a.theme-btn-outlined{
+	border:1px solid #1cc100;
+	color:#1cc100;	
+}
+.btn.theme-btn-outlined:hover, a.theme-btn-outlined:hover, .btn.theme-btn-outlined:focus, a.theme-btn-outlined:focus{
+	background:#1cc100;
+	border-color:#1cc100;
+}
+.btn.light-btn, a.light-btn{
+	background:#ffffff;
+	border:1px solid #ffffff;
+	color:#1cc100;
+}
+.btn.light-btn:hover, .btn.light-btn:focus, a.light-btn:hover, a.light-btn:focus{
+	background:#1cc100;
+	border:1px solid #1cc100;
+	color:#ffffff;
+}
+nav.navbar.bootsnav ul.nav > li >a.btn-signup.red-btn {
+    background:#1cc100 !important;
+}
+.cmp-overview .cmp-icon i.fa {
+    background: #1cc100;
+}
+.category-box .category-desc i {
+    color: #1cc100;
+}
+.nav-tabs.nav-advance>li.active>a, .nav-tabs.nav-advance>li>a:hover, .nav-tabs.nav-advance>li>a:focus {
+    color: #1cc100 !important;
+}
+.slick-next:before, .slick-prev:before {
+    color: #1cc100;
+}
+
+/*---------- Banner ----------*/
+.main-banner:before {
+    content: "";
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: #273140;
+    background: -webkit-gradient(bottom, #2d3345 0%,#2d3345 100%);
+    background: -webkit-linear-gradient(bottom, #2d3345 0%,#2d3345 100%);
+    background: -moz-linear-gradient(bottom, #2d3345 0%,#2d3345 100%);
+    background: -ms-linear-gradient(bottom, #2d3345 0%,#2d3345 100%);
+    background: -o-linear-gradient(bottom, #2d3345 0%,#2d3345 100%);
+    background: linear-gradient(bottom, #2d3345 0%,#2d3345 100%);
+    opacity: 0.8;
+}
+.employer-box:before {
+    opacity: 0.5;
+	background:#1cc100;
+    background: -webkit-gradient(left, #1cc100 0%,#1cc100 100%);
+    background: -webkit-linear-gradient(left, #1cc100 0%,#1cc100 100%);
+    background: -moz-linear-gradient(left, #1cc100 0%,#1cc100 100%);
+    background: -ms-linear-gradient(left, #1cc100 0%,#1cc100 100%);
+    background: -o-linear-gradient(left, #1cc100 0%,#1cc100 100%);
+    background: linear-gradient(left, #1cc100 0%,#1cc100 100%);
+}
+
+
+/*----------- Checkbox & Radio Button -------------*/
+.custom-checkbox input[type="checkbox"]:checked + label:before {
+	border-color:#1cc100;
+	background:#1cc100;
+}
+.custom-radio [type="radio"]:checked + label:after,
+.custom-radio [type="radio"]:not(:checked) + label:after {
+    background:#1cc100;
+}
+
+/*---------- Pagination --------------*/
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus, .pagination>li>a:hover, .pagination>li>a:focus {
+	color:#1cc100;
+	border-color:#1cc100;
+}
+.pagination li:first-child a {
+	background: #1cc100;
+	border: 1px solid #1cc100;
+}
+
+/*------ Package --------*/
+.active .package-header {
+    background: #1cc100;
+}
+button.btn.btn-package {
+    background: #1cc100;
+}
+
+/*--------- Testimonial ----------*/
+.testimonial-detail .client-rating i {
+    color: #1cc100;
+}
+
+/*------ Accordion Color -------------*/
+.style-1#accordion .panel-title a:after,
+.style-1#accordion .panel-title a.collapsed:after{
+    color:#1cc100;
+}
+
+#accordion2 .panel-title a:after,
+#accordion2 .panel-title a.collapsed:after{
+    color:#1cc100;
+}
+
+#accordion2.panel-group.style-2 .panel-title a.collapsed {
+    background: #1cc100;
+}
+
+/*------ Tab Color -------------*/
+.tab.style-1 .nav-tabs li a:hover,
+.tab.style-1 .nav-tabs li.active a{
+    color: #1cc100;
+    border-bottom: 2px solid #1cc100;
+}
+
+.tab.style-2 .nav-tabs li a:hover, .tab.style-2 .nav-tabs li.active a {
+    border-bottom: 2px solid #1cc100;
+    background: #1cc100;
+}
+
+/*---- Footer -------*/
+.footer h4 {
+    color: #1cc100;
+}
+.footer .f-social-box ul li a i:hover, .footer .f-social-box ul li a i:focus {
+    background: #1cc100;
+    border-color: #1cc100;
+}
+
+
+/*--------- Inner Pages ----------------*/
+ul.side-list-inline.social-side li a :hover, ul.side-list-inline.social-side li a :focus {
+    background:#1cc100;
+}
+.detail-info > h3 {
+    color: #1cc100;
+}
+span.pull-right.vacancy-no span.v-count {
+    background: rgba(28, 193, 0,0.1);
+    color: #1cc100;
+    border: 1px solid #1cc100;
+}
+

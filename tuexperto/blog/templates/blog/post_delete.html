@@ -1,0 +1,34 @@
+{% extends "../components/base.html" %}
+{% load static %}
+{% block content %}
+	{% include "components/title_page.html" %}
+	<section class="create-job">
+		<div class="container">
+			<form class="c-form" method="post" enctype="multipart/form-data">
+				{% csrf_token %}
+				<!-- General Information -->
+				<div class="box">
+					<div class="box-header">
+						<h4>Eliminar {{object.title|capfirst}}</h4>
+					</div>
+					<div class="box-body">
+						<div class="row">
+							
+							<div class="col-sm-12">
+								<div class="col-sm-12 m-clear" style="margin-bottom:30px">
+									<label>Estas seguro que quieres borrar "{{ object }}"?</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="text-center">
+					<button type="submit" class="btn btn-m theme-btn">Eliminar Entrada</button>
+				</div>
+				
+			</form>
+		</div>
+	</section>
+{% endblock content %}

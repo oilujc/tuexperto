@@ -1,0 +1,23 @@
+<!-- ======================= Start Page Title ===================== -->
+<div class="page-title">
+	<div class="container">
+		<div class="page-caption">
+			{% if title_page %}
+				<h2>{{title_page}}</h2>
+			{% endif %}
+			{% if breadcrumb %}
+				<p>
+					{% for item in breadcrumb %}
+						{% if not forloop.last %}
+							<a href="{{item.0}}" title="{{item.1|title}}">{{item.1|title}}</a> <i class="ti-arrow-right"></i>
+						{% else %}
+							{{item.1}}
+						{% endif %}
+					{% endfor %}
+				</p>
+				
+			{% endif %}
+		</div>
+	</div>
+</div>
+<!-- ======================= End Page Title ===================== -->

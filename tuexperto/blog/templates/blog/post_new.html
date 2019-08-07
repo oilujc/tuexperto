@@ -1,0 +1,155 @@
+{% extends "../components/base.html" %}
+{% load static %}
+{% block style %}
+	{{ form.media.css }}
+{% endblock style %}
+{% block content %}
+	{% include "components/title_page.html" %}
+	<section class="create-job">
+		<div class="container">
+			<form class="c-form" method="post" enctype="multipart/form-data">
+				{% csrf_token %}
+				<!-- General Information -->
+				<div class="box">
+					<div class="box-header">
+						<h4>Información General</h4>
+					</div>
+					<div class="box-body">
+						<div class="row">
+							
+							<div class="col-sm-9">
+								<div class="col-sm-12">
+									<label for="{{form.title.id_for_label}}">{{form.title.label}}</label>
+									{{form.title}}
+									{% if form.title.errors %}
+										{% for error in form.title.errors %}
+											<div class="alert alert-danger">
+												{{error}}
+											</div>
+										{% endfor %}
+									{% endif %}
+								</div>
+								<div class="col-sm-12">
+									<label for="{{form.description.id_for_label}}">{{form.description.label}}</label>
+									{{form.description}}
+									{% if form.description.errors %}
+										{% for error in form.description.errors %}
+											<div class="alert alert-danger">
+												{{error}}
+											</div>
+										{% endfor %}
+									{% endif %}
+								</div>
+								<div class="col-sm-12 mrg-top-20 br">
+									{{form.content}}
+									{% if form.content.errors %}
+										{% for error in form.content.errors %}
+											<div class="alert alert-danger">
+												{{error}}
+											</div>
+										{% endfor %}
+									{% endif %}
+								</div>
+								<div class="col-sm-12 m-clear" style="margin-bottom:30px">
+									<label for="{{form.image.id_for_label}}">{{form.image.label}}</label>
+									<div class="custom-file-upload">
+										{{form.image}}
+									</div>
+									{% if form.image.errors %}
+										{% for error in form.image.errors %}
+											<div class="alert alert-danger">
+												{{error}}
+											</div>
+										{% endfor %}
+									{% endif %}
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="col-sm-12 m-clear mrg-top-15">
+									<span class="custom-checkbox">
+										{{form.is_active}}
+										<label for="{{form.is_active.id_for_label}}">{{form.is_active.label}}</label>
+									</span>
+									{% if form.is_active.errors %}
+										{% for error in form.is_active.errors %}
+											<div class="alert alert-danger">
+												{{error}}
+											</div>
+										{% endfor %}
+									{% endif %}
+								</div>
+								{% if form.show_in_navbar %}
+								<div class="col-sm-12 m-clear mrg-top-15">
+									<span class="custom-checkbox">
+										{{form.show_in_navbar}}
+										<label for="{{form.show_in_navbar.id_for_label}}">{{form.show_in_navbar.label}}</label>
+									</span>
+									{% if form.show_in_navbar.errors %}
+										{% for error in form.show_in_navbar.errors %}
+											<div class="alert alert-danger">
+												{{error}}
+											</div>
+										{% endfor %}
+									{% endif %}
+								</div>
+								{% endif %}
+								{% if form.category %}
+								<div class="col-sm-12 mrg-top-15">
+									<label for="{{form.category.id_for_label}}">{{form.category.label}}</label>
+									{{form.category}}
+									{% if form.category.errors %}
+										{% for error in form.category.errors %}
+											<div class="alert alert-danger">
+												{{error}}
+											</div>
+										{% endfor %}
+									{% endif %}
+								</div>
+								{% endif %}
+								{% if form.subcategory %}
+								<div class="col-sm-12 mrg-top-15">
+									<label for="{{form.subcategory.id_for_label}}">{{form.subcategory.label}}</label>
+									{{form.subcategory}}
+									{% if form.subcategory.errors %}
+										{% for error in form.subcategory.errors %}
+											<div class="alert alert-danger">
+												{{error}}
+											</div>
+										{% endfor %}
+									{% endif %}	
+								</div>
+								{% endif %}
+								<div class="col-sm-12 m-clear">
+									<label for="{{form.tags.id_for_label}}">{{form.tags.label}}</label>
+									{{form.tags}}
+									{% if form.tags.errors %}
+										{% for error in form.tags.errors %}
+											<div class="alert alert-danger">
+												{{error}}
+											</div>
+										{% endfor %}
+									{% endif %}
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="text-center">
+					{% if object %}
+					<button type="submit" class="btn btn-m theme-btn">Editar Entrada</button>
+					{% else %}
+					<button type="submit" class="btn btn-m theme-btn">Crear Entrada</button>
+					{% endif %}
+				</div>
+				
+			</form>
+		</div>
+	</section>
+{% endblock content %}
+{% block scripts %}
+	{{form.media.js }}
+	<script type="text/javascript" src="{% static "js/blog.js" %}"></script>
+{% endblock scripts %}

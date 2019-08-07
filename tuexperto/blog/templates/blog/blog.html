@@ -1,0 +1,175 @@
+{% extends "../components/base.html" %}
+{% load static %}
+{% load thumbnail %}
+{% block content %}
+	{% if not object %}
+	<!-- ======================= Start Freelancer Banner ===================== -->
+	<section class="freelancer banner" style="background:url({% static "banner.jpg" %});">
+		<div class="container">
+			<div class="col-md-7 col-sm-7">
+				<div class="caption">
+					{% if object %}
+						<h2>BLOG DE <br>{{object.title|upper}}</h2>
+						<p>{{object.description|capfirst}}.</p>
+					{% else %}
+						<h2>BLOG DE <br>TECNOLOGÍA</h2>
+						<p>PUBLICACIONES RELACIONADAS A LA TECNOLOGÍA COMO PHP, PYTHON, .NET, FRONT-END, ENTRE OTROS.</p>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ======================= End Banner ===================== -->
+	{% else %}
+	 {% include "../components/title_page.html" %}
+	{% endif %}
+	
+	<!-- ===================== Blogs In Grid ===================== -->
+	<section class="padd-top-0">
+		<div class="container">
+			<div class="row mrg-top-5">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="heading">
+							{% if not object %}
+							<h2>Ultimas <span class="theme-cl">Entradas</span></h2>
+							{% else %}
+							<h2><span class="theme-cl">{{object.title|capfirst}}</span></h2>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			<div class="row">
+				{% for obj in object_list %}
+					<div class="col-md-4 col-sm-6">
+						<div class="blog-box blog-grid-box">
+							<div class="blog-grid-box-img">
+
+								{% if obj.image %}
+									<a href="{% url 'post' obj.slug %}"><img src="{{obj.image.url}}" class="img-responsive" alt="" /></a>
+								{% else %}
+									<a href="{% url 'post' obj.slug %}"><img src="http://via.placeholder.com/1200x1200" class="img-responsive" alt="" /></a>
+								{% endif %}
+							</div>
+							<div class="blog-grid-box-content">
+								<div class="blog-avatar text-center">
+									{% if obj.user.image %}
+										{% thumbnail obj.user.image "100x100" crop="center" as im %}
+										<img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}" class="img-responsive" alt="" />
+										{% endthumbnail %}
+									{% else %}
+										<img src="http://via.placeholder.com/80x80" class="img-responsive" alt="" />
+									{% endif %}
+									{% if obj.user.get_full_name %}
+										<p><strong>By</strong> <span class="theme-cl">{{obj.user.get_full_name|title}}</span></p>
+									{% else %}
+										<p><strong>By</strong> <span class="theme-cl">{{obj.user.username|title}}</span></p>
+									{% endif %}
+									
+								</div>
+								<h4 style="margin-bottom:15px"><a href="{% url 'post' obj.slug %}">{{obj.title|capfirst}}</a></h4>
+								<p>{{obj.description|safe|truncatewords:10}}</p>
+								<a href="{% url 'post' obj.slug %}" class="theme-cl" title="Read More..">Continue...</a>
+								{{obj.hit_count.hits}}
+								<div class="mrg-top-15">
+									<span class="mrg-l-5 job-tag bg-success-light">{{obj.category.category|capfirst}}</span>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="bs-example">
+						{% if is_paginated %}
+							<ul class="pagination">
+								{% if page_obj.has_previous %}
+									<li><a href="?page={{ page_obj.previous_page_number }}">«</a></li>
+								{% else %}
+									<li class="disabled"><a href="" class="disabled">«</a></li>
+								{% endif %}
+								{% for i in paginator.page_range %}
+									{% if page_obj.number == i %}
+										<li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+									{% else %}
+										<li><a href="?page={{ i }}">{{ i }}</a></li>
+									{% endif %}
+								{% endfor %}
+								{% if page_obj.has_next %}
+									<li><a href="?page={{ page_obj.next_page_number }}">»</a></li>
+								{% else %}
+									<li class="disabled"><a href="" class="disabled">»</a></li>
+								{% endif %}
+							</ul>
+						{% endif %}
+						{% if object_list.has_other_pages %}
+							<ul class="pagination">
+								{% if object_list.has_previous %}
+									<li><a href="?page={{ object_list.previous_page_number }}">«</a></li>
+								{% else %}
+									<li class="disabled"><a href="" class="disabled">«</a></li>
+								{% endif %}
+								{% for i in object_list.paginator.page_range %}
+									{% if object_list.number == i %}
+										<li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+									{% else %}
+										<li><a href="?page={{ i }}">{{ i }}</a></li>
+									{% endif %}
+								{% endfor %}
+								{% if object_list.has_next %}
+									<li><a href="?page={{ object_list.next_page_number }}">»</a></li>
+								{% else %}
+									<li class="disabled"><a href="" class="disabled">»</a></li>
+								{% endif %}
+							</ul>
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ===================== End Blogs In Grid ===================== -->
+	{% if bloggers %}
+		<!-- ================ Bloggers Section ============================== -->
+		<section>
+			<div class="container">
+				
+				<div class="row" data-aos="fade-up">
+					<div class="col-md-12">
+						<div class="heading">
+							<h2>Expertos</h2>
+							<p>Puedes ver los perfiles de nuestros expertos y contactar con ellos<br>160,000 applications every day.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row" data-aos="fade-up">
+					<div class="employer-slide">
+						
+						<!-- Single Employer -->
+						<div class="employer-widget">
+							<div class="u-content">
+								<div class="avatar box-80">
+									<a href="employer-detail/html"><img class="img-responsive" src="http://via.placeholder.com/80x80" alt=""></a>
+								</div>
+								<h5><a href="employer-detail/html">Google Inc</a></h5>
+								<p class="text-muted">2708 Scenic Way, Sutter, IL 62373</p>
+							</div>
+							<div class="job-type-grid">
+								<a href="employer-detail/html" class="employer-browse-btn btn-radius br-light">5 Open Position</a>
+							</div>
+						</div>
+					
+						
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		<!-- ================ End Opening job Section ============================== -->
+	{% endif %}
+{% endblock content %}
+{% block scripts %}
+	
+{% endblock scripts %}

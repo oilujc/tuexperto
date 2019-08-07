@@ -1,0 +1,208 @@
+{% extends "../components/base.html" %}
+{% block content %}
+	<!-- ===================== Blogs In Grid ===================== -->
+		<section>
+			<div class="container">
+			
+				<div class="row">
+					<!-- =============== Blog Detail ================= -->
+					<div class="col-md-12 col-sm-12">
+						
+						<!-- /.Article -->
+						<article class="blog-news detail-wrapper">
+							<div class="full-blog">
+								
+								<!-- Blog Content -->
+								<div class="full blog-content">
+									<h3 class="text-center mrg-bot-25">{{object.title|capfirst}}</h3>
+									
+									<div class="blog-text">
+										{{object.content|safe}}
+										
+										{% if object.user.get_full_name %}
+											
+										<div class="post-meta"><a href="#" class="author theme-cl">{{object.user.get_full_name|capfirst}}</a> | 10 Comments </div>
+										{% else %}
+										<div class="post-meta"><a href="#" class="author theme-cl">{{object.user.username|capfirst}}</a> | 10 Comentarios </div>
+
+										{% endif %}
+									</div>
+									
+									<!-- Blog Share Option -->
+									<div class="row no-mrg">
+										<div class="blog-footer-social">
+											<span>Tags <i class="fa fa-tags"></i></span>
+											{% for tag in object.tags.all %}
+												<span class="job-tag {% cycle 'bg-purple-light' 'bg-danger-light' 'bg-primary-light' 'bg-warning-light' 'bg-success-light'  %}">{{tag}}</span>
+											{% endfor %}
+										</div>
+									</div>
+
+									<div class="row no-mrg">
+										<div class="blog-footer-social">
+											<span>Share <i class="fa fa-share-alt"></i></span>
+											<ul class="list-inline social">
+												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+												<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+											</ul>
+										</div>
+									</div>
+									
+								</div>
+								<!-- Blog Content -->
+								
+							</div>
+						</article>
+						<!-- /.Article -->
+						
+						<!-- User Comments -->
+						<div class="row no-mrg">
+							<div class="col-md-12 col-sm-12">
+								<div class="comments">      
+									<div class="comments-title">
+										<h4>Comments (2)</h4>
+									</div>
+									
+									<!-- Single Comment -->
+									<div class="single-comment">
+										<div class="img-holder">
+											<img src="http://via.placeholder.com/80x80" class="img-responsive" alt="">
+										</div>
+										<div class="text-holder">
+											<div class="top">
+												<div class="name pull-left">
+													<h4>Robert Mil</h4>
+												</div>
+												<div class="rating pull-right">
+													<ul>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star"></i></li>
+														<li><i class="fa fa-star"></i></li>
+													</ul>
+												</div>
+											</div>
+											
+											<div class="text">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+											</div>
+											
+											<span class="small">Dec 30 2017</span>
+										</div>
+									</div>
+									
+									<!-- Single Comment -->
+									<div class="single-comment">
+										<div class="img-holder">
+											<img src="http://via.placeholder.com/80x80" class="img-responsive" alt="">
+										</div>
+										<div class="text-holder">
+										
+											<div class="top">
+												<div class="name pull-left">
+													<h4>Litha Dax</h4>
+												</div>
+												<div class="rating pull-right">
+													<ul>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star"></i></li>
+													</ul>
+												</div>
+											</div>
+											
+											<div class="text">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+											</div>
+											<span class="small">Dec 15 2017</span>
+											
+										</div>
+										
+										<div class="single-comment">
+										<div class="img-holder">
+											<img src="http://via.placeholder.com/80x80" class="img-responsive" alt="">
+										</div>
+										<div class="text-holder">
+										
+											<div class="top">
+												<div class="name pull-left">
+													<h4>Robert Mil</h4>
+												</div>
+												<div class="rating pull-right">
+													<ul>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star active"></i></li>
+														<li><i class="fa fa-star"></i></li>
+													</ul>
+												</div>
+											</div>
+											
+											<div class="text">
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											</div>
+											<span class="small">Dec 15 2017</span>
+											
+										</div>
+									</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<!-- /.User Comments -->
+						
+						<!-- Start Blog Comment -->
+						<div class="row">
+							<div class="col-md-12 col-sm-12">
+								<div class="comments-form"> 
+									<div class="section-title2">
+										<h4>Leave a Reply</h4>
+									</div>
+									
+									<form>
+										<div class="col-md-6 col-sm-6">
+											<input type="text" class="form-control" placeholder="Your Name">
+										</div>
+										
+										<div class="col-md-6 col-sm-6">
+											<input type="email" class="form-control" placeholder="Your Email">
+										</div>
+										
+										<div class="col-md-6 col-sm-6">
+											<input type="text" class="form-control" placeholder="Your Mobile">
+										</div>
+										
+										<div class="col-md-6 col-sm-6">
+											<input type="text" class="form-control" placeholder="Subject">
+										</div>
+										
+										<div class="col-md-12 col-sm-12">
+											<textarea class="form-control" placeholder="Comment"></textarea>
+										</div>
+										
+										<div class="col-md-12 col-sm-12">
+											<button class="btn theme-btn width-200" type="submit">submit now</button>
+										</div>
+									</form>
+								</div>
+							
+							</div>
+						</div>
+						<!-- End Blog Comment -->
+						
+					</div>
+					<!-- /.col-md-8 -->
+					
+				</div>
+				
+			</div>
+		</section>
+		<!-- ===================== End Blogs In Grid ===================== -->
+{% endblock content %}
