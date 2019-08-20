@@ -21,8 +21,8 @@ class SignupForm(UserCreationForm):
 			'first_name', 
 			'last_name', 
 			'email',
-			'password1',
 			'country',
+			'password1',
 			'password2',
 			)
 		widgets = {

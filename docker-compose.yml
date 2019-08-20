@@ -2,10 +2,22 @@ version: '3'
 
 services:
 
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    expose:
+      - "80"
+    volumes:
+      - .:/code
+      - ./config/nginx:/etc/nginx/conf.d
+      - /static:/static
+      - /media:/media
+    depends_on:
+      - web
+
   db:
     image: postgres:latest
-    env_file:
-      - config/postgres/.env
 
   redis:
     image: redis:latest
@@ -19,9 +31,9 @@ services:
       - ./tuexperto:/code
       - ./tuexperto/static:/static
       - ./tuexperto/media:/media
-    command: bash -c "python /code/manage.py makemigrations --no-input && python /code/manage.py migrate --no-input && python /code/manage.py runserver 0.0.0.0:8000"
+    command: bash -c "python /code/manage.py makemigrations --no-input && python /code/manage.py migrate --no-input && gunicorn tuexperto.wsgi -b 0.0.0.0:8080 --reload"
     ports:
-      - "8000:8000"
+      - "8080:8080"
     depends_on:
       - db
       - redis

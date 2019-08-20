@@ -24,6 +24,7 @@ django-celery-results = "*"
 celery = "*"
 django-celery-beat = "*"
 redis = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.6"
