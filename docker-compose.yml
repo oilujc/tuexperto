@@ -16,9 +16,6 @@ services:
     depends_on:
       - web
 
-  db:
-    image: postgres:latest
-
   redis:
     image: redis:latest
     ports:
