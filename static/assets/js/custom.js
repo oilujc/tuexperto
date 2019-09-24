@@ -94,25 +94,4 @@
 	  ]
 	});
 	
-	/*----- Fast Click Select ------*/
-	$(document).ready(function() {
-	  $('select').niceSelect();
-	});
-
-	/*---Bootstrap wysihtml5 editor --*/	
-	$('.textarea').wysihtml5();    
-	
-	/*-----Add field Script------*/
-	$('.extra-field-box').each(function() {
-	var $wrapp = $('.multi-box', this);
-	$(".add-field", $(this)).on('click', function() {
-		$('.dublicat-box:first-child', $wrapp).clone(true).appendTo($wrapp).find('input').val('').focus();
-	});
-	$('.dublicat-box .remove-field', $wrapp).on('click', function() {
-		if ($('.dublicat-box', $wrapp).length > 1)
-			$(this).parent('.dublicat-box').remove();
-		});
-	});
-	
-
 })(jQuery);
