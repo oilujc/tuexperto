@@ -196,7 +196,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 #URL que maneja los medios de los que se sirve MEDIA_ROOT, utilizados para administrar archivos almacenados 
-MEDIA_URL = "/media/"
+MEDIA_URL = '/media/'
 
 #Define los lugares adicionales de la aplicacion staticfiles
 STATICFILES_DIRS = [
@@ -206,8 +206,6 @@ STATICFILES_DIRS = [
 #Ruta absoluta al directorio donde se recopilaran los archivos estaticos para la implementacion
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR),"static")
 
-
-MEDIA_URL = "/media/"
 #Ruta absoluta del sistema de archivos al directorio que contendra los archivos cargados por el usuario .
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),"media")
 
