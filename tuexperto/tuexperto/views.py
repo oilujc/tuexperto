@@ -77,8 +77,8 @@ class HomeView(MetadataMixin,ListView):
 	template_name= "blog/blog.html"
 	paginate_by = 9
 	title="TuExperto.pro"
-	description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi explicabo aperiam rerum, quos consequuntur voluptatem voluptatum debitis ea recusandae voluptatibus ab itaque hic eius iste nobis, eos reprehenderit quae saepe!'
-	keywords=['blog', 'informacion', 'increible']
+	description='Tu experto en tecnología'
+	keywords=['blog', 'informacion', 'increible', 'desarrollo web', 'desarrollo', 'website', 'develop', 'desarrollador']
 	extra_props = {
 	    'viewport': 'width=device-width, initial-scale=1.0, minimum-scale=1.0'
 	   	}
