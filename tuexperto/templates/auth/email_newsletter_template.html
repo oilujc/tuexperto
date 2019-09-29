@@ -295,6 +295,7 @@
       <![endif]-->
                                         </td>
                                     </tr>
+                                    {% if post.image %}
                                     <tr>
                                         <td align="center" style="font-size:0px;padding:10px 25px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;word-break:break-word;">
                                             <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
@@ -302,7 +303,7 @@
                                                     <tr>
                                                         <td style="width:550px;">
                                                             <a href="http://{{domain}}/{{post.slug}}" target="_blank">
-                                                                <img alt="tuexperto.pro" height="250" src="./static/post.png" style="border:none;display:block;outline:none;text-decoration:none;height:250px;width:100%;font-size:13px;" width="550" />
+                                                                <img alt="tuexperto.pro" height="250" src="http://{{domain}}/{{post.image.url}}" style="border:none;display:block;outline:none;text-decoration:none;height:250px;width:100%;font-size:13px;" width="550" />
                                                             </a>
                                                         </td>
                                                     </tr>
@@ -310,6 +311,7 @@
                                             </table>
                                         </td>
                                     </tr>
+                                    {% endif %}
                                     <tr>
                                         <td align="left" style="font-size:0px;padding:10px 25px;padding-right:25px;padding-left:25px;word-break:break-word;">
                                             <div style="font-family:open Sans Helvetica, Arial, sans-serif;font-size:18px;line-height:1;text-align:left;color:#334e6f;"><a href="http://{{domain}}/{{post.slug}}" style="text-decoration:none; color:#334e6f">{{post.title|capfirst}}</a></div>
