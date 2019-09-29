@@ -35,7 +35,7 @@ class Skill(models.Model):
  
 class Subscriber(models.Model):
 	
-	email = models.EmailField()
+	email = models.EmailField(unique=True)
 	send_msg = models.BooleanField(default=True)
 
 	created_at = models.DateTimeField(auto_now_add=True)
@@ -63,6 +63,8 @@ class User(ModelMeta, AbstractUser):
 	title = models.CharField(max_length=50, blank=True, null=True)
 	short_description = models.CharField(max_length=150, blank=True, null=True)
 	description = models.TextField(blank=True, null=True)
+	send_email = models.BooleanField(default=True)
+	user_type = models.CharField(max_length=2, choices=(('bs', 'Basic'), ('bl', 'Blogger')),default='bs')
 	skills = models.ManyToManyField(Skill, blank=True)
 	cv = models.FileField(upload_to=user_filename_path, blank=True, null=True,validators=[validate_file_doc_extension])
 	country = CountryField(blank=True,null=True)

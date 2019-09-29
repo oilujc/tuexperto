@@ -31,26 +31,28 @@ def register_view(request):
 			user = form.save(commit=False)
 			user.is_active = False
 			user.save()
-			context["success_msg"] = "Your account has been created successfully. Wait for an administrator to activate your account"
+			# context["success_msg"] = "Your account has been created successfully. Wait for an administrator to activate your account"
 
-			#---
-			# uid = urlsafe_base64_encode(force_bytes(user.pk)).decode()
-			# current_site = get_current_site(request)
-			# mail_subject = 'Activate your account.'
-			# message = render_to_string('auth/email_confirm_template.html', {
-			# 	'mail_subject': mail_subject,
-   #              'user': user,
-   #              'domain': current_site.domain,
-   #              'uid':uid,
-   #              'token':account_activation_token.make_token(user),
-   #          })
-			# to_email = user.email
+			uid = urlsafe_base64_encode(force_bytes(user.pk))
+			current_site = get_current_site(request)
+			mail_subject = 'Activa tu cuenta.'
+			html_content = render_to_string('auth/email_confirm_template.html', {
+				'mail_subject': mail_subject,
+                'user': user,
+                'domain': current_site.domain,
+                'uid':uid,
+                'contactEmail': 'suport@tuexperto.pro',
+                'companyName': 'TuExperto.pro',
+                'token':account_activation_token.make_token(user),
+            })
+			to_email = user.email
 
-			# email = EmailMultiAlternatives(mail_subject, "", "support.desk@lightspeed.tools", [to_email])
-			# email.attach_alternative(message, "text/html")
-			# email.send()
+			email = EmailMultiAlternatives(mail_subject, "")
+			email.attach_alternative(html_content, "text/html")
+			email.to = [to_email]
+			email.send()
 
-			# context["success_msg"] = "Please confirm your email address to complete the registration"
+			context["success_msg"] = "Please confirm your email address to complete the registration"
 
 			
 	else:
@@ -93,6 +95,10 @@ class HomeView(MetadataMixin,ListView):
 
 	def get_queryset(self):
 		return Post.objects.filter(is_active=True, post_type="pt").order_by('-created_at')
+
+
+# class ContactFormView(FormView):
+# 	form_class = ContactForm
 
 def error_404(request, exception):
 	data = {}

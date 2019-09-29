@@ -105,6 +105,11 @@ class UserPostListView(LoginRequiredMixin, MetadataMixin, ListView):
 		if self.request.user.is_authenticated != True:
 			raise Http404
 
+		if (self.request.user.user_type != 'bl' and 
+			self.request.user.is_superuser != True and 
+			self.request.user.is_staff != True):
+			raise Http404
+
 		if self.kwargs['pt'] in VALID_POST_TYPE_LIST:
 
 			if VALID_POST_TYPE_LIST[self.kwargs['pt']]['permission'] != 'all':
@@ -157,6 +162,11 @@ class PostCreateView(LoginRequiredMixin, MetadataMixin, CreateView):
 
 	def dispatch(self, *args, **kwargs):
 		if self.request.user.is_authenticated != True:
+			raise Http404
+
+		if (self.request.user.user_type != 'bl' and 
+			self.request.user.is_superuser != True and 
+			self.request.user.is_staff != True):
 			raise Http404
 
 		if self.kwargs['pt'] in VALID_POST_TYPE_LIST:
@@ -219,6 +229,12 @@ class PostUpdateView(LoginRequiredMixin, MetadataMixin, UpdateView):
 	def dispatch(self, *args, **kwargs):
 		if self.request.user.is_authenticated != True:
 			raise Http404
+
+		if (self.request.user.user_type != 'bl' and 
+			self.request.user.is_superuser != True and 
+			self.request.user.is_staff != True):
+			raise Http404
+
 
 		if self.kwargs['pt'] in VALID_POST_TYPE_LIST:
 
@@ -285,6 +301,12 @@ class PostDeleteView(LoginRequiredMixin, MetadataMixin, DeleteView):
 	def dispatch(self, *args, **kwargs):
 		if self.request.user.is_authenticated != True:
 			raise Http404
+
+		if (self.request.user.user_type != 'bl' and 
+			self.request.user.is_superuser != True and 
+			self.request.user.is_staff != True):
+			raise Http404
+
 
 		if self.kwargs['pt'] in VALID_POST_TYPE_LIST:
 

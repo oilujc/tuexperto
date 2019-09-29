@@ -4,6 +4,8 @@ from django.urls import path, include
 from rest_framework import routers
 
 from .blog.views import (CategoryViewSet,SubCategoryViewSet)
+from .accounts.views import (SubscriberCreateView,)
+from rest_framework.authtoken import views
 
 router = routers.DefaultRouter()
 router.register('category', CategoryViewSet, basename='api_category')
@@ -14,10 +16,10 @@ app_name = 'api'
 urlpatterns = [
 
 	#Token
-    # path('token/', obtain_jwt_token, name='obtain_jwt_token'),
+    path('token/', views.obtain_auth_token, name='obtain_token'),
     # path('token/verify', verify_jwt_token, name='verify_jwt_token'),
 
-    # path('buyprices', BuyPriceAverageView.as_view(), name='buyprices_list'),
+    path('subscriber', SubscriberCreateView.as_view(), name='subscriber_create'),
     # path('btc-list/buy', BTCBuyPriceAverageView.as_view(), name='btc_prices_buy_list'),
     # path('btc-list/buy/<int:pk>', BTCBuyPriceAverageDetailView.as_view(), name='btc_prices_buy_list'),
 
