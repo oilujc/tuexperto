@@ -14,7 +14,10 @@ class MyModelSelect2TagWidget(ModelSelect2TagWidget):
 		print(values)
 		cleaned_values = []
 		for val in values:
-			obj, created = self.queryset.get_or_create(tag=str(val))
+			try:
+				obj, created = self.queryset.get_or_create(pk=int(val))
+			except ValueError:
+				obj, created = self.queryset.get_or_create(tag=str(val))
 
 			cleaned_values.append(obj.pk)
 		return cleaned_values

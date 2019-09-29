@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
+from accounts.models import Subscriber
 
 class UserSerializer(serializers.ModelSerializer):
 	full_name = serializers.SerializerMethodField()
@@ -25,3 +26,11 @@ class UserSerializer(serializers.ModelSerializer):
 
 	def get_full_name(self, obj):
 		return obj.get_full_name()
+
+
+class SubscriberSerializer(serializers.ModelSerializer):
+
+	class Meta:
+		model = Subscriber
+		fields = ('email',
+				)

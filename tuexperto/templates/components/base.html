@@ -94,12 +94,14 @@
 						<div class="col-md-5 col-sm-5">
 							<h4>Suscríbete!</h4>
 							<!-- Newsletter -->
-							<div class="input-group">
-								<input type="text" class="form-control" placeholder="Enter Email">
-								<span class="input-group-btn">
-									<button type="button" class="btn btn-default"><i class="fa fa-location-arrow font-20"></i></button>
-								</span>
-							</div>
+							<form id="subscriberForm" method="post">
+								<div class="input-group">
+									<input type="text" name="email" id="email" class="form-control" placeholder="Enter Email">
+									<span class="input-group-btn">
+										<button type="submit" class="btn btn-default"><i class="fa fa-location-arrow font-20"></i></button>
+									</span>
+								</div>
+							</form>
 							
 							<!-- Social Box -->
 							<div class="f-social-box">
@@ -141,6 +143,9 @@
 			
 			<!-- Custom Js -->
 			<script src="{% static "assets/js/custom.js" %}"></script>
+			
+			<script src="{% static "assets/js/main.js" %}"></script>
+
 
 			{% block scripts %}
 				

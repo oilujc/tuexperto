@@ -45,9 +45,10 @@ INSTALLED_APPS = [
     'hitcount',
     'django_countries',
     'sorl.thumbnail',
-    
     'accounts',
-    'blog'
+    'blog',
+    'projects',
+    'rest_framework.authtoken'
 ]
 
 
@@ -55,6 +56,7 @@ INSTALLED_APPS = [
 CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
 CKEDITOR_UPLOAD_PATH = "uploads/"
 CKEDITOR_IMAGE_BACKEND = "pillow"
+
 
 CKEDITOR_CONFIGS = {
     'default': {

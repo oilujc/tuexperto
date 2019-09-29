@@ -24,7 +24,7 @@ from django.contrib.auth.views import (LoginView,
 
 from accounts.views import (ProfileView,)
 
-from .views import (HomeView, register_view)
+from .views import (HomeView, register_view, activate)
 from blog.views import (PostView,
                         CategoryView,
                         SubCategoryView,
@@ -64,7 +64,7 @@ urlpatterns = [
 
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('select2/', include('django_select2.urls')),
-    # path('activate/<str:uidb64>/<str:token>', activate, name='activate'),
+    path('activate/<str:uidb64>/<str:token>', activate, name='activate'),
 
     #Api
     path('api/', include('api.urls')),
