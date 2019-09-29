@@ -20,6 +20,7 @@ from django.contrib.sites.shortcuts import get_current_site
 from api.blog.serializers import PostSerializer
 
 class SubscriberCreateView(APIView):
+	permission_classes = [AllowAny]
 
 	def post(self, request, format=None):
 		serializer = SubscriberSerializer(data=request.data)
