@@ -1,0 +1,33 @@
+<mjml>
+  <mj-body background-color="#ffffff" font-size="13px">
+  	<mj-section>
+  		<mj-column vertical-align="middle" width="100%">
+  			<mj-image src="./static/logo.jpg" alt="tuexperto.pro" href="#" align="center" border="none" width="100%" padding-left="0px" padding-right="0px" padding-bottom="0px" padding-top="0"></mj-image>
+        	<mj-divider padding-left="0px" padding-right="0px" border-color="#ff7c39"></mj-divider>
+  		</mj-column>
+  	</mj-section>
+    <mj-section background-color="#ff7c39" padding-bottom="20px" padding-top="20px">
+      <mj-column vertical-align="middle" width="100%">
+        <mj-text align="left" color="#ffffff" font-size="22px" font-family="open Sans Helvetica, Arial, sans-serif" padding-left="25px" padding-right="25px">Bienvenido a TuExperto.pro</mj-text>
+        <mj-text align="left" color="#ffffff" font-size="15px" font-family="open Sans Helvetica, Arial, sans-serif" padding-left="25px" padding-right="25px">Estamos muy emocionados de que hayas decidido probarnos. En caso de que tenga alguna pregunta, no dude en comunicarse con nosotros en [[ContactEmail]]. </mj-text>
+    </mj-section>
+    <mj-section>
+        <mj-column>
+            <mj-text align="left" color="#334e6f" font-size="22px" font-family="open Sans Helvetica, Arial, sans-serif" padding-left="25px" padding-right="25px">Estas son algunas entradas recientes que podrían interesarte.</mj-text>
+        </mj-column>
+    </mj-section>
+    <mj-section>
+        <mj-column>
+            <mj-divider padding-left="25px" padding-right="25px" border-color="#ff7c39"></mj-divider>
+            <mj-image href="#" src="./static/post.png" alt="tuexperto.pro" align="center" border="none" width="550px" height="250px" padding-left="0px" padding-right="0px" padding-bottom="0px" padding-top="0px"></mj-image>
+            <mj-text align="left" color="#334e6f" font-size="18px" font-family="open Sans Helvetica, Arial, sans-serif" padding-left="25px" padding-right="25px"><a href="#" style="text-decoration:none; color:#334e6f">Estas son algunas entradas que podrían gustarte.</a></mj-text>
+        </mj-column>
+    </mj-section>
+    
+    <mj-section background-color="#ff7c39" padding-bottom="20px" padding-top="20px">
+        <mj-column>   
+          <mj-text align="right" color="#ffffff" font-size="15px" font-family="open Sans Helvetica, Arial, sans-serif" padding-left="25px" padding-right="25px">El equipo de [[CompanyName]]</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

@@ -1,0 +1,18 @@
+<mjml>
+  <mj-body background-color="#ffffff" font-size="13px">
+  	<mj-section>
+  		<mj-column vertical-align="middle" width="100%">
+  			<mj-image src="./static/logo.jpg" alt="tuexperto.pro" align="center" border="none" width="100%" padding-left="0px" padding-right="0px" padding-bottom="0px" padding-top="0"></mj-image>
+        	<mj-divider padding-left="0px" padding-right="0px" border-color="#ff7c39"></mj-divider>
+  		</mj-column>
+  	</mj-section>
+    <mj-section background-color="#ff7c39" padding-bottom="20px" padding-top="20px">
+      <mj-column vertical-align="middle" width="100%">
+        <mj-text align="left" color="#ffffff" font-size="22px" font-family="open Sans Helvetica, Arial, sans-serif" padding-left="25px" padding-right="25px"><span style="color:#FEEB35">Hola [[FirstName]]</span><br /><br /> Bienvenido a TuExperto.pro</mj-text>
+        <mj-text align="left" color="#ffffff" font-size="15px" font-family="open Sans Helvetica, Arial, sans-serif" padding-left="25px" padding-right="25px">Estamos muy emocionados de que hayas decidido probarnos. En caso de que tenga alguna pregunta, no dude en comunicarse con nosotros en [[ContactEmail]]. Puede iniciar sesión en su cuenta con su nombre de usuario [[UserName]]</mj-text>
+        <mj-button  href="#" align="left" font-size="22px" font-weight="bold" background-color="#ffffff" border-radius="10px" color="#1AA0E1" font-family="open Sans Helvetica, Arial, sans-serif">Login</mj-button>
+        <mj-text align="left" color="#ffffff" font-size="15px" font-family="open Sans Helvetica, Arial, sans-serif" padding-left="25px" padding-right="25px">Gracias, <br /> El equipo de [[CompanyName]]</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

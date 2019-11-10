@@ -1,0 +1,1301 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"subs",
+				"subscriber\t(base.html)"
+			],
+			[
+				"a",
+				"ajax\t$.ajax()"
+			],
+			[
+				"sub",
+				"submit\t.submit()"
+			],
+			[
+				"Valu",
+				"ValueError\t(views.py)"
+			],
+			[
+				"post",
+				"posts\tabc"
+			],
+			[
+				"h",
+				"href\tabc"
+			],
+			[
+				"st",
+				"style\t(email_newsletter_template.html)"
+			],
+			[
+				"he",
+				"height\t(email_newsletter_template.html)"
+			],
+			[
+				"mjc",
+				"mjcolumn\tMJML - MJML Column"
+			],
+			[
+				"contex",
+				"context\t(views.py)"
+			],
+			[
+				"email",
+				"email_send\t(serializers.py)"
+			],
+			[
+				"tem",
+				"template_name\tabc"
+			],
+			[
+				"con",
+				"context\tabc"
+			],
+			[
+				"acco",
+				"accounts\t(urls.py)"
+			],
+			[
+				"acc",
+				"accounts\t(urls.py)"
+			],
+			[
+				"user",
+				"user_type\tabc"
+			],
+			[
+				"text",
+				"text-decoration\t(email_confirm_template.html)"
+			],
+			[
+				"padid",
+				"padding-right"
+			],
+			[
+				"form",
+				"form_class\tstatement"
+			],
+			[
+				"List",
+				"list\tclass"
+			],
+			[
+				"View",
+				"View\tclass"
+			],
+			[
+				"FormVi",
+				"FormView\tclass"
+			],
+			[
+				"get_",
+				"get_user_model\tabc"
+			],
+			[
+				"P",
+				"ProjectAdmin\tabc"
+			],
+			[
+				"adm",
+				"admin\tabc"
+			],
+			[
+				"mm",
+				"m2m\tManyToManyField (m2m)"
+			],
+			[
+				"modes",
+				"models\tabc"
+			],
+			[
+				"qs",
+				"qsContent\tproperty"
+			],
+			[
+				"to",
+				"toLowerCase\tmethod"
+			],
+			[
+				"mo",
+				"model_name"
+			],
+			[
+				"Sellpr",
+				"SellPriceAverage"
+			],
+			[
+				"Buyp",
+				"BuyPriceAverage"
+			],
+			[
+				"th",
+				"this\tkeyword"
+			],
+			[
+				"s",
+				"splash\tproperty"
+			],
+			[
+				"so",
+				"sort\tmethod"
+			],
+			[
+				"se",
+				"slugSection\tproperty"
+			],
+			[
+				"chap",
+				"chapter"
+			],
+			[
+				"wo",
+				"word"
+			],
+			[
+				"wor",
+				"word_list"
+			],
+			[
+				"mt",
+				"mt-5 \tBootstrap 4 Class"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"mr-",
+				"mr-5 \tBootstrap 4 Class"
+			],
+			[
+				"font",
+				"font-weight-bold \tBootstrap 4 Class"
+			],
+			[
+				"texw",
+				"text-white \tBootstrap 4 Class"
+			],
+			[
+				"bg-s",
+				"bg-success \tBootstrap 4 Class"
+			],
+			[
+				"py",
+				"py-2 \tBootstrap 4 Class"
+			],
+			[
+				"mb-",
+				"mb-2 \tBootstrap 4 Class"
+			],
+			[
+				"mb",
+				"mb-5 \tBootstrap 4 Class"
+			],
+			[
+				"w",
+				"width\tAttr"
+			],
+			[
+				"Ho",
+				"HomeView"
+			],
+			[
+				"static",
+				"static\tstatic"
+			],
+			[
+				"url",
+				"url\turl"
+			],
+			[
+				"cas",
+				"class\tAttr"
+			],
+			[
+				"cha",
+				"CharField"
+			],
+			[
+				"ea",
+				"each\t$.each()"
+			],
+			[
+				"htt",
+				"Http404"
+			],
+			[
+				"Sel",
+				"SellCalculationsPayments"
+			],
+			[
+				"pag",
+				"page_type_valids"
+			],
+			[
+				"p",
+				"publications_count"
+			],
+			[
+				"cal",
+				"calculate_prices"
+			],
+			[
+				"ban",
+				"bank_name"
+			],
+			[
+				"cou",
+				"country"
+			],
+			[
+				"co",
+				"countrycode"
+			],
+			[
+				"sw",
+				"switch\tkeyword"
+			],
+			[
+				"Set",
+				"SetBookTwo\tenum member"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			],
+			[
+				"ba",
+				"background\tproperty"
+			],
+			[
+				"skil",
+				"Skills"
+			],
+			[
+				"text-",
+				"text-center \tBootstrap 4 Class"
+			],
+			[
+				"get",
+				"get_object"
+			],
+			[
+				"Pos",
+				"Post"
+			],
+			[
+				"read",
+				"ready\t$(document).ready"
+			],
+			[
+				"script",
+				"script\tTag"
+			],
+			[
+				"c",
+				"category\tlocal var"
+			],
+			[
+				"Cate",
+				"Category"
+			],
+			[
+				"for",
+				"forms"
+			],
+			[
+				"va",
+				"VALID_POST_TYPE_LIST"
+			],
+			[
+				"slug",
+				"slugify"
+			],
+			[
+				"ale",
+				"alert-danger \tBootstrap 4 Class"
+			],
+			[
+				"crea",
+				"createview\tCreateView"
+			],
+			[
+				"style",
+				"style\tAttr"
+			],
+			[
+				"bg-",
+				"bg-primary \tBootstrap 4 Class"
+			],
+			[
+				"Zoo",
+				"zoomInActive\tproperty"
+			],
+			[
+				"z",
+				"zoomInActive\tproperty"
+			],
+			[
+				"zo",
+				"zoomOutActive\tproperty"
+			],
+			[
+				"i",
+				"idChapter\tproperty"
+			],
+			[
+				"t",
+				"showToast\tmethod"
+			],
+			[
+				"id",
+				"idSubchapter\tproperty"
+			],
+			[
+				"m",
+				"Mark\tinterface"
+			],
+			[
+				"dea",
+				"default"
+			],
+			[
+				"su",
+				"subchapter\tscript"
+			],
+			[
+				"fi",
+				"filter\tmethod"
+			],
+			[
+				"na",
+				"navigate\tmethod"
+			],
+			[
+				"parse",
+				"parseInt\tfunction"
+			],
+			[
+				"stri",
+				"toString\tmethod"
+			],
+			[
+				"fo",
+				"forobj\tfor … in … loop"
+			],
+			[
+				"bac",
+				"background-image\tproperty"
+			],
+			[
+				"no",
+				"node_modules/"
+			],
+			[
+				"d",
+				"DatabaseService\tclass"
+			],
+			[
+				"prin",
+				"printf"
+			],
+			[
+				"int",
+				"intval"
+			],
+			[
+				"ta",
+				"target\tAttr"
+			],
+			[
+				"Sell",
+				"SellPriceAverageView"
+			],
+			[
+				"Buy",
+				"BuyPriceAverageSerializer"
+			],
+			[
+				"buy",
+				"buyserializer"
+			],
+			[
+				"calc",
+				"calculate_list_price"
+			],
+			[
+				"sme",
+				"ssmethod\tSerializerMethodField (ssmethod)"
+			],
+			[
+				"g",
+				"guards\tdirectory"
+			],
+			[
+				"in",
+				"indexOf\tmethod"
+			],
+			[
+				"cons",
+				"console\tvar"
+			],
+			[
+				"fiel",
+				"fieldsList"
+			],
+			[
+				"tex",
+				"ion-text-center"
+			],
+			[
+				"pro",
+				"protected\tkeyword"
+			],
+			[
+				"paymen",
+				"payment_method"
+			],
+			[
+				"up",
+				"update"
+			],
+			[
+				"n",
+				"network.service\tscript"
+			],
+			[
+				"imp",
+				"import\timports a module …"
+			],
+			[
+				"Pag",
+				"PagesService\talias"
+			],
+			[
+				"ro",
+				"roomService\tproperty"
+			],
+			[
+				"do",
+				"doc\tproperty"
+			],
+			[
+				"r",
+				"readRooms\tmethod"
+			],
+			[
+				"ope",
+				"operators\tdirectory"
+			],
+			[
+				"Rou",
+				"Router\talias"
+			],
+			[
+				"repo",
+				"response\tlet"
+			],
+			[
+				"Lo",
+				"LoginGuard\talias"
+			],
+			[
+				"signInw",
+				"signInWithEmailAndPassword\tmethod"
+			],
+			[
+				"fir",
+				"firebaseConfig\talias"
+			],
+			[
+				"f",
+				"firebaseconf\tscript"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "tuexperto/tuexperto/views.py",
+			"settings":
+			{
+				"buffer_size": 3878,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Django:runser",
+				"Django: Run Server"
+			],
+			[
+				"runser",
+				"Django: Run Server"
+			],
+			[
+				"Django:",
+				"Django: Run Server"
+			],
+			[
+				"Django:r",
+				"Django: Run Server"
+			],
+			[
+				"Django:mi",
+				"Django: Migrate Database"
+			],
+			[
+				"migrate",
+				"Django: Migrate Database"
+			],
+			[
+				"mak",
+				"Django: Make Migration"
+			],
+			[
+				"Django:migra",
+				"Django: Migrate App"
+			],
+			[
+				"Django:make",
+				"Django: Make Migration"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Django:run",
+				"Django: Run Server"
+			],
+			[
+				"Django:migrae",
+				"Django: Migrate App"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Django:app",
+				"Django: New App"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"car",
+				"Carbon: share selection"
+			],
+			[
+				"c",
+				"Carbon: share selection"
+			],
+			[
+				"carbo",
+				"Carbon: share selection"
+			],
+			[
+				"carb",
+				"Carbon: share selection"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instlal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 137.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/tuexperto"
+	],
+	"file_history":
+	[
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/static/assets/js/main.js",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/blog/templates/blog/blog.html",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/api/accounts/views.py",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/tuexperto/views.py",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/templates/components/navbar.html",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/tuexperto/urls.py",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/templates/contact/index.html",
+		"/C/Users/JULIO/Downloads/themeforest-21530973-jobhill-job-board-html-template (1)/job-hill-full-template/_html/freelancer.html",
+		"/C/Users/JULIO/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/Default (Windows).sublime-keymap",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/accounts/models.py",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/api/accounts/serializers.py",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/blog/views.py",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/tuexperto/settings.py",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/projects/admin.py",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/templates/auth/email_newsletter_template.html",
+		"/C/Users/JULIO/Projects/tuexperto/email/email_newsletter_template.html",
+		"/C/Users/JULIO/Projects/tuexperto/email/email_newsletter_template.mjml",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/api/urls.py",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/api/blog/serializers.py",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/templates/components/base.html",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/utils/email_send.py",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/blog/forms.py",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/projects/models.py",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/accounts/views.py",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/tuexperto/secret.py",
+		"/C/Users/JULIO/Projects/tuexperto/email/email_confirm_template.html",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/templates/auth/email_confirm_template.html",
+		"/C/Users/JULIO/Projects/tuexperto/email/email_confirm_template.mjml",
+		"/C/Users/JULIO/Projects/tuexperto/email/email_welcome_template.mjml",
+		"/C/Users/JULIO/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/C/Users/JULIO/AppData/Roaming/Sublime Text 3/Packages/User/Anaconda.sublime-settings",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/api/blog/views.py",
+		"/C/Users/JULIO/Projects/tuexperto/tuexpertopro.sublime-project",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/tuexperto/forms.py",
+		"/C/Users/JULIO/Projects/gapp/girosapp/girosapp/settings.py",
+		"/C/Users/JULIO/Projects/tuexperto/tuexperto/static/assets/css/responsiveness.css",
+		"/C/Users/JULIO/Projects/gapp/girosapp/girosapp/secret.py",
+		"/C/Users/JULIO/Projects/gapp/girosapp/requirements.txt",
+		"/C/Users/JULIO/Projects/tuexperto/Dockerfile",
+		"/C/Users/JULIO/Downloads/dockerfile/Dockerfile",
+		"/C/Users/JULIO/Projects/tuExpertoCms/Pipfile.lock",
+		"/C/Users/JULIO/Projects/hdlf/src/app/services/database.service.ts",
+		"/C/Users/JULIO/Projects/hdlf/src/app/pages/search/search.page.ts",
+		"/C/Users/JULIO/Projects/hdlf/src/theme/variables.scss",
+		"/C/Users/JULIO/Projects/hdlf/src/app/pages/chapters/chapters.page.ts",
+		"/C/Users/JULIO/Projects/hdlf/src/app/pages/search/search.page.html",
+		"/C/Users/JULIO/Projects/hdlf/src/assets/content.json",
+		"/C/Users/JULIO/Projects/gapp/girosapp/app/main.py",
+		"/C/Users/JULIO/Projects/gapp/girosapp/Dockerfile",
+		"/C/Users/JULIO/Projects/gapp/girosapp/prices/models.py",
+		"/C/Users/JULIO/Projects/gapp/girosapp/mongo/models.py",
+		"/C/Users/JULIO/Projects/hdlf/src/app/pages/chapters/chapters.page.html",
+		"/C/Users/JULIO/Projects/hdlf/src/assets/hdlf.json",
+		"/C/Users/JULIO/Projects/hdlf/src/app/pages/subchapters/subchapters.page.html",
+		"/C/Users/JULIO/Projects/hdlf/src/app/pages/content/content.page.html",
+		"/C/Users/JULIO/Projects/hdlf/src/app/pages/pages/pages.page.html",
+		"/C/Users/JULIO/Projects/hdlf/config.xml",
+		"/C/Users/JULIO/Projects/hdlf/src/app/pages/section/section.page.html",
+		"/C/Users/JULIO/Projects/hdlf/platforms/android/app/build/outputs/apk/release/Hdlf.apk",
+		"/C/Users/JULIO/Projects/gapp/girosapp/buy/models.py",
+		"/C/Users/JULIO/Projects/gapp/girosapp/utils/mongo_router.py",
+		"/C/Users/JULIO/Projects/girosapp/girosapp/Dockerfile",
+		"/C/Users/JULIO/Projects/hdlf/src/app/app-routing.module.ts",
+		"/C/Users/JULIO/Projects/hdlf/src/app/app.component.ts",
+		"/C/Users/JULIO/Projects/hdlf/src/app/components/front/front.component.ts",
+		"/C/Users/JULIO/Projects/hdlf/src/app/home/home.page.html",
+		"/C/Users/JULIO/Projects/hdlf/src/app/components/front/front.component.html",
+		"/C/Users/JULIO/Projects/hdlf/src/app/home/home.page.ts",
+		"/C/Users/JULIO/Projects/hdlf/src/app/app.module.ts",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/app/models.py",
+		"/C/Users/JULIO/Projects/hdlf/angular.json",
+		"/C/Users/JULIO/Projects/hdlf/src/app/home/home.page.scss",
+		"/C/Users/JULIO/Projects/hdlf/src/app/app.component.html",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/api/views.py",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/api/urls.py",
+		"/C/Users/JULIO/Projects/hdlf/src/app/interfaces/content.ts",
+		"/C/Users/JULIO/Projects/hdlf/src/app/pages/section/section.page.ts",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/templates/content.html",
+		"/C/Users/JULIO/Projects/hdlf/src/app/components/front/front.component.scss",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/api/serializers.py",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/script.py",
+		"/C/Users/JULIO/Projects/hdlf/src/assets/section.json",
+		"/C/Users/JULIO/AppData/Roaming/Sublime Text 3/Packages/Pretty JSON/Pretty JSON.sublime-settings",
+		"/C/Users/JULIO/AppData/Roaming/Sublime Text 3/Packages/User/Pretty JSON.sublime-settings",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/djangoTest/urls.py",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/db.json",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/djangoTest/secret.py",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/README.md",
+		"/C/Users/JULIO/Projects/girosapp/girosapp/src/accounts/tasks.py",
+		"/C/Users/JULIO/Projects/girosapp/girosapp/src/girosapp/celery.py",
+		"/C/Users/JULIO/Projects/girosapp/girosapp/src/girosapp/views.py",
+		"/C/Users/JULIO/Projects/gapp/girosapp/.gitignore",
+		"/C/Users/JULIO/Projects/tuexperto/config/nginx/tuexperto.conf",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/djangoTest/settings.py",
+		"/C/Users/JULIO/Projects/hdlf/node_modules/@angular/compiler-cli/node_modules/source-map/lib/source-node.js",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/app/admin.py",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/utils/context_processors.py",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/djangoTest/views.py",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/templates/search.html",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/templates/base.html",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/utils/generators.py",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/templates/index.html",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/templates/navbar.html",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/static/css/custom.css",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/templates/header.html",
+		"/C/Users/JULIO/Downloads/startbootstrap-blog-home-gh-pages/startbootstrap-blog-home-gh-pages/index.html",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/templates/sidebar.html",
+		"/C/Users/JULIO/Downloads/startbootstrap-blog-post-gh-pages/startbootstrap-blog-post-gh-pages/index.html",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/content.json",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/subchapters.json",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/chapters.json",
+		"/C/Users/JULIO/Downloads/startbootstrap-scrolling-nav-gh-pages/startbootstrap-scrolling-nav-gh-pages/index.html",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/.gitignore",
+		"/C/Users/JULIO/Projects/djangoTest/djangoTest/djangoTest/secret.p",
+		"/C/Users/JULIO/Projects/tuexperto/docker-compose.yml",
+		"/C/Users/JULIO/Projects/backup.sql",
+		"/C/Users/JULIO/Projects/tuexperto/Pipfile",
+		"/C/Users/JULIO/Projects/girosapp/girosapp/docker-compose.yml",
+		"/C/Users/JULIO/Projects/girosapp/girosapp/.gitignore",
+		"/C/Users/JULIO/Projects/girosapp/girosapp/config/nginx/girosapp.conf",
+		"/C/Users/JULIO/Projects/devBlog/docker-compose.yml",
+		"/C/Users/JULIO/Projects/devBlog/config/postgres/docker-entrypoint-initdb.d/myproject_web.sh",
+		"/C/Users/JULIO/Projects/devBlog/config/nginx/Dockerfile",
+		"/C/Users/JULIO/Projects/devBlog/tuexperto/blog/models.py",
+		"/C/Users/JULIO/Projects/devBlog/tuexperto/blog/templates/blog/page_detail.html",
+		"/C/Users/JULIO/Projects/devBlog/tuexperto/tuexperto/views.py",
+		"/C/Users/JULIO/Projects/devBlog/tuexperto/tuexperto/settings.py",
+		"/C/Users/JULIO/Projects/devBlog/Pipfile"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 105.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"    ",
+			"        ",
+			"         ",
+			"        ",
+			"    ",
+			"        ",
+			"    ",
+			"SearchContactFormViewView",
+			"or",
+			"BuyPriceAverageView",
+			"companyName",
+			"ffffff",
+			"            ",
+			"        ",
+			"verbose_name_plural",
+			"        ",
+			"\n    ",
+			"contactEmail",
+			"com",
+			"href",
+			"CompanyName",
+			"username",
+			"        ",
+			"verbose_name_plural",
+			"        ",
+			"    ",
+			"blog",
+			"Post",
+			"user_directory_path",
+			"        ",
+			"     ",
+			"    ",
+			"linter",
+			"send_msg",
+			"://redis:6379/0",
+			"Content",
+			"enemies",
+			"items",
+			"update",
+			"update_id",
+			"Update",
+			"mLocalBitcoinUsers",
+			"set_logs",
+			"UpdateLog",
+			"cleanPublications",
+			"set_sell_price",
+			"calculate_profit_pairs",
+			"Publications",
+			"mongo_db",
+			"database = 'mongo_db'",
+			"auth",
+			"auth_db",
+			"auth",
+			"return getattr(model._meta, 'database', None)",
+			"database = 'mongo_db'",
+			"            ",
+			"        ",
+			"if model._meta.app_label == 'mongo':\n            return 'mongo_db'\n        return None",
+			"mydb02",
+			"localbitcoin",
+			"localbi",
+			"auth",
+			"if (model == LocalBitcoinUsers or\n             model == Publications or\n              model == BuyPriceAverage or\n               model == SellPriceAverage):",
+			"auth",
+			"prices_",
+			"model",
+			"'mongo'",
+			"max15",
+			"max_length",
+			"sellprice_id",
+			"buy_price",
+			"BuyPriceAverage",
+			"HOST",
+			"auth_db",
+			"auth",
+			"'auth'",
+			"auth",
+			"            ",
+			"        ",
+			"           ",
+			"        ",
+			"\n        ",
+			"        ",
+			"    ",
+			"\n    ",
+			"            ",
+			"           ",
+			"          ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			"end",
+			"gold",
+			"png",
+			"down",
+			"styles",
+			"SectionView",
+			"SectionSerializer",
+			"sections",
+			"SectionView",
+			"ListAPIView",
+			"class",
+			"SectionSerializer",
+			"class",
+			"queryset",
+			"Section",
+			"SectionView",
+			"chapterType",
+			"ul",
+			"subchapters",
+			"tuexperto",
+			"form = ContentAdminForm",
+			"    ",
+			"ul",
+			"chapter",
+			"Enfermos",
+			"Confesión",
+			"chapter",
+			"\"S",
+			"if \"",
+			"\"\"",
+			"if \"",
+			",\"\"",
+			"if \"",
+			"pass"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "tuexperto/tuexperto/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3878,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								829,
+								829
+							]
+						],
+						"settings":
+						{
+							"SL.18.region_keys":
+							[
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 42.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 109.0
+	},
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 307.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "tuexpertopro.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"free",
+				"_html\\freelancer.html"
+			],
+			[
+				"service.ts",
+				"hdlf\\src\\app\\services\\database.service.ts"
+			],
+			[
+				"hdlf.ap",
+				"hdlf\\platforms\\android\\app\\build\\outputs\\apk\\release\\Hdlf.apk"
+			],
+			[
+				"boo",
+				"node_modules\\less\\lib\\less-browser\\bootstrap.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 277.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
