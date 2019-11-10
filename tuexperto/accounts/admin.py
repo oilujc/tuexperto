@@ -5,6 +5,7 @@ from .models import (User,
                     Subscriber,
                     UserEducation,
                     UserExperience,
+                    MySite,
 					)
 
 
@@ -30,3 +31,4 @@ admin.site.register(Skill)
 admin.site.register(Subscriber)
 admin.site.register(UserEducation)
 admin.site.register(UserExperience)
+admin.site.register(MySite)

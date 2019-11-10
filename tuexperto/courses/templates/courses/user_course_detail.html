@@ -1,0 +1,110 @@
+{% extends "../components/base.html" %} {% load hitcount_tags %} {% block content %} {% include "components/title_page.html" %}
+<section>
+    <div class="container">
+
+        <!-- row -->
+        <div class="row">
+            <!-- Start post List -->
+            <div class="col-md-12 col-sm-12">
+                <div class="row mrg-bot-20">
+                    <div class="col-sm-5">
+                        <h4>Mis Entradas</h4>
+                    </div>
+
+                    <div class="col-sm-7">
+
+                        <div class="fl-right">
+                            <div class="search-wide full">
+                                <a href="{% url 'user_courses_detail_new' object.slug %}" class="btn-job theme-btn">{{new_btn}}</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Single Verticle post -->
+
+                {% for obj in object.posts.all %}
+                <div class="job-verticle-list">
+                    <div class="vertical-job-card">
+                        <div class="vertical-job-header">
+                            <div class="vrt-job-cmp-logo">
+                                {% if obj.image %}
+                                <a href="{% url 'course_post' course=object.slug slug=obj.slug %}"><img src="{{obj.image.url}}" class="img-responsive" alt="" /></a>
+                                {% else %}
+                                <a href="{% url 'course_post' course=object.slug slug=obj.slug %}"><img src="http://via.placeholder.com/80x80" class="img-responsive" alt="" /></a>
+                                {% endif %}
+                            </div>
+                            <h4><a href="{% url 'course_post' course=object.slug slug=obj.slug %}">{{obj.title|capfirst}}</a></h4>
+                            {% if obj.category and obj.subcategory %}
+                            <span class="com-tagline">{{obj.category.title|capfirst}} /
+                                {{obj.subcategory.title|capfirst}}</span> {% endif %} {% if obj.is_active %}
+                            <span class="pull-right job-type full-type bg-primary-light">Activa</span> {% else %}
+                            <span class="pull-right job-type full-type bg-danger-light">Inactiva</span> {% endif %}
+                        </div>
+                        <div class="vertical-job-body">
+                            <div class="row">
+                                <div class="col-md-9 col-sm-8">
+                                    <ul class="can-skils">
+                                        <li><strong>Descripción: </strong>{{obj.description|capfirst}}</li>
+                                        <li><strong>Tags: </strong> {% for tag in obj.tags.all %}
+                                            <span class="skill-tag">{{tag.tag}}</span> {% endfor %}
+                                        </li>
+                                        <li><strong>Fecha de creación: </strong>{{obj.created_at|date:"d-M-Y H:i"}}</li>
+                                        <li><strong>Ultíma edición: </strong>{{obj.updated_at|date:"d-M-Y H:i"}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical-job-footer">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="cmp-job-rating">
+                                        <ul>
+                                            <li><a href="#" title="">{% get_hit_count for obj %} vistas</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="cmp-job-review">
+                                        <ul>
+                                            <li><a href="" title="">Editar<i class="theme-color fa fa-pencil"></i></a></li>
+                                            <li><a href="" title="">Eliminar<i class="theme-color fa fa-trash"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+        </div>
+        <!-- End Row -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="bs-example">
+                    {% if is_paginated %}
+                    <ul class="pagination">
+                        {% if page_obj.has_previous %}
+                        <li><a href="?page={{ page_obj.previous_page_number }}">«</a></li>
+                        {% else %}
+                        <li class="disabled"><a href="" class="disabled">«</a></li>
+                        {% endif %} {% for i in paginator.page_range %} {% if page_obj.number == i %}
+                        <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span>
+                        </li>
+                        {% else %}
+                        <li><a href="?page={{ i }}">{{ i }}</a></li>
+                        {% endif %} {% endfor %} {% if page_obj.has_next %}
+                        <li><a href="?page={{ page_obj.next_page_number }}">»</a></li>
+                        {% else %}
+                        <li class="disabled"><a href="" class="disabled">»</a></li>
+                        {% endif %}
+                    </ul>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

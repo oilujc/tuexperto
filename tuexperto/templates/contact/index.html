@@ -1,0 +1,38 @@
+{% extends "components/base.html" %}
+{% block content %}
+{% include "components/title_page.html" %}
+
+{# AQUI DEJE EL TRABAJO #}
+{# TIENES QUE TERMINAR DE EDITAR EL FORMULARIO #}
+{# CREAR EL FORMULARIO EN FORMS.PY #}
+{# MAQUETAR EL CORREO #}
+{# CONFIGURAR EL ENVIO DEL CORREO #}
+<!-- ================ Fill Forms ======================= -->
+<section class="padd-top-20">
+    <div class="container">
+        <div class="col-md-6 col-sm-6">
+            <form>
+                <div class="form-group">
+                    <label>Name:</label>
+                    <input type="text" class="form-control" placeholder="Name" />
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" class="form-control" placeholder="Email" />
+                </div>
+                <div class="form-group">
+                    <label>Message:</label>
+                    <textarea class="form-control height-120" placeholder="Message"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn theme-btn" name="submit">Send Request</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6 col-sm-6">
+            <img src="http://via.placeholder.com/800x650" class="img-responsive" alt="" />
+        </div>
+    </div>
+</section>
+<!-- ================ End Fill Forms ======================= -->
+{% endblock content %}

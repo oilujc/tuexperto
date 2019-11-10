@@ -58,3 +58,27 @@ $('#subscriberForm').submit(function(event) {
 			console.log(XMLHttpRequest.responseText);
 		}});
 	});
+
+$('#subscriberBannerForm').submit(function(event) {
+	/* Act on the event */
+	event.preventDefault();
+
+	var form = $(this).serialize();
+
+	$.ajax({
+		url: '/api/subscriber',
+		type: 'POST',
+		dataType: "json",
+		data: form,
+		success: function(data) {
+			$("#subscriberBannerForm")[0].reset();
+		},
+		beforeSend: function(xhr, settings) {
+			if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+				xhr.setRequestHeader("X-CSRFToken", csrftoken);
+			}
+		},
+		error: function(XMLHttpRequest, textStatus, errorThrown) {
+			console.log(XMLHttpRequest.responseText);
+		}});
+	});

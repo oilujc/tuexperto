@@ -20,7 +20,25 @@ def user_directory_path(instance, filename):
 	return '{0}/{1}'.format(instance.public_id,filename)
 
 def user_filename_path(instance, filename):
-	return '{0}/{1}'.format(instance.public_id,filename) 
+	return '{0}/{1}'.format(instance.public_id,filename)
+
+class MySite(models.Model):
+	"""Model definition for MySite."""
+
+	# TODO: Define fields here
+	host = models.CharField(max_length=255)
+
+	class Meta:
+		"""Meta definition for MySite."""
+
+		verbose_name = 'MySite'
+		verbose_name_plural = 'MySites'
+
+	def __str__(self):
+		"""Unicode representation of MySite."""
+		pass
+
+
 
 class Skill(models.Model):
 

@@ -25,6 +25,9 @@ celery = "*"
 django-celery-beat = "*"
 redis = "*"
 gunicorn = "*"
+pylint = "*"
+djangorestframework-jwt = "*"
+django-cors-headers = "*"
 
 [requires]
 python_version = "3.6"

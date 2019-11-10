@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'celery',
 
     'rest_framework',
+    'rest_framework.authtoken',
+    'corsheaders',
     'ckeditor',
     'ckeditor_uploader',
     'meta',
@@ -47,8 +49,8 @@ INSTALLED_APPS = [
     'sorl.thumbnail',
     'accounts',
     'blog',
+    'courses',
     'projects',
-    'rest_framework.authtoken'
 ]
 
 
@@ -101,8 +103,12 @@ CKEDITOR_CONFIGS = {
 
 META_USE_TITLE_TAG = True
 
+TITLE_PAGE = 'tuexperto.pro'
+GLOBAL_DESCRIPTION = 'global description'
 
 REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 10,
     'DEFAULT_PARSER_CLASSES': (
         'rest_framework.parsers.JSONParser',
         'rest_framework.parsers.FormParser',
@@ -114,7 +120,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.BasicAuthentication',
     ),
@@ -125,6 +131,7 @@ AUTH_USER_MODEL = 'accounts.User'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
